@@ -161,17 +161,17 @@
     <message>
         <location filename="../logic/importer.py" line="40"/>
         <source>Aucun fichier .000 trouvé</source>
-        <translation type="unfinished"></translation>
+        <translation>No se ha encontrado ningún archivo .000</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="48"/>
         <source>📄 Fichier {} / {}  : {} </source>
-        <translation type="unfinished"></translation>
+        <translation>📄 Archivo {} / {}  : {} </translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="78"/>
         <source>Impossible de se connecter à la base PostgreSQL</source>
-        <translation type="unfinished"></translation>
+        <translation>No se puede conectar a la base de datos PostgreSQL</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="80"/>
@@ -181,29 +181,31 @@
     <message>
         <location filename="../logic/importer.py" line="91"/>
         <source>✔ Mise à jour du schéma enc terminée.</source>
-        <translation type="unfinished"></translation>
+        <translation>✔ Actualización del esquema enc completada.</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="96"/>
         <source>❌ Erreur clone_tables_with_prefix :
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>❌ Error clone_tables_with_prefix:
+{}</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="106"/>
         <source>Chemin GPKG non configuré dans les options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruta GPKG no configurada en las opciones.</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="107"/>
         <source>Veuillez configurer le chemin du GeoPackage dans les options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Configure la ruta del GeoPackage en las opciones.</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="121"/>
         <source>IImpossible de récupérer la connexion PostGIS:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>No se puede recuperar la conexión PostGIS:
+{}</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="138"/>
@@ -363,7 +365,7 @@
     <message>
         <location filename="../logic/importer.py" line="767"/>
         <source>⚠ Table {} ignorée (aucune entité)</source>
-        <translation type="unfinished"></translation>
+        <translation>⚠ Tabla {} ignorada (sin entidades)</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="787"/>
@@ -373,7 +375,7 @@
     <message>
         <location filename="../logic/importer.py" line="803"/>
         <source>  • Copie des {} entités de {}</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="808"/>
@@ -1110,82 +1112,82 @@
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="6"/>
         <source>Outils ENC</source>
-        <translation type="unfinished"></translation>
+        <translation>Herramientas ENC</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="14"/>
         <source>Filtrer les couches par &quot;purpose&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrar capas por «propósito»</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="19"/>
         <source>1 - Vue d’ensemble</source>
-        <translation type="unfinished"></translation>
+        <translation>1 - Visión general</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="20"/>
         <source>2 - Généralités</source>
-        <translation type="unfinished"></translation>
+        <translation>2 - Generalidades</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="21"/>
         <source>3 - Côtière</source>
-        <translation type="unfinished"></translation>
+        <translation>3 - Cstera</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="22"/>
         <source>4 - Approche</source>
-        <translation type="unfinished"></translation>
+        <translation>4 - Acercamiento</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="23"/>
         <source>5 - Port</source>
-        <translation type="unfinished"></translation>
+        <translation>5 - Puerto</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="24"/>
         <source>6 - Accostage</source>
-        <translation type="unfinished"></translation>
+        <translation>6 - Atracar</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="30"/>
         <source>Exécuter</source>
-        <translation type="unfinished"></translation>
+        <translation>Ejecutar</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="37"/>
         <source>Enlever tous les filtres</source>
-        <translation type="unfinished"></translation>
+        <translation>Quitar todos los filtros</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="49"/>
         <source>Définir échelles d&apos;affichage pour les couches sélectionnées</source>
-        <translation type="unfinished"></translation>
+        <translation>Definir escalas de visualización para las capas seleccionadas</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="56"/>
         <source>Échelle minimale :</source>
-        <translation type="unfinished"></translation>
+        <translation>Escala mínima:</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="64"/>
         <source>ex : 250000</source>
-        <translation type="unfinished"></translation>
+        <translation>ej : 250000</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="72"/>
         <source>Échelle maximale :</source>
-        <translation type="unfinished"></translation>
+        <translation>Escala máxima:</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="80"/>
         <source>ex : 10000</source>
-        <translation type="unfinished"></translation>
+        <translation>ej : 10000</translation>
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="88"/>
         <source>Appliquer</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicar</translation>
     </message>
 </context>
 </TS>

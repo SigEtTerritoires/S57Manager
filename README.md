@@ -15,19 +15,33 @@ Il permet notamment :
 
 ## 📦 **Fonctionnalités principales**
 
+### 🔹 Options S-57
+
+![Options du plugin](resources/dialogsettings.png)
+
+Si vous voulez utiliser une base Postgis, la connexion dans QGis doit être active. Il est conseillé d'utiliser une base vide car le plugin modifie public.layerstyle et crée plusieurs schémas de travail.
+Si vous voulez utiliser du geopackage, vous devrez simplement indiquer le répertoire à utiliser. Le plugin crée si nécessaire les gpkg utilisés.
+Le bouton **Installer les symboles svg** charge les fichiers nécessaires à la symbologie par défaut dans le profil de l'utilisateur, pas dans le répertoire svg propre de QGis.
+
 ### 🔹 Import S-57
 
-* Import de fichiers ENC (.000) vers une base GeoPackage.
+* Import de fichiers ENC (.000) vers une base GeoPackage ou une base PostGIS.
 * Indexation automatique.
 * Nettoyage et organisation des tables.
 * Barre de progression pendant l’import.
 
+![Import des fichier .000](resources/dialogimport.png)
+
+Le plugin balaye tout le répertoire et sous-répertoires. Il charge TOUS les fichiers .000 présents.
 ### 🔹 Affichage structuré des couches
 
 * Création d’un groupe QGIS contenant les couches classées par thèmes.
 * Styles automatiques.
 * Activation/désactivation rapide.
 
+![Affichage des couches](resources/dialogdisplay.png)
+
+L'ordre de chargement est prévu pour assurer la visibilité de toutes les couches, sans masquages.
 ### 🔹 Outils ENC
 
 Accessible via **Menu → S57 Manager → Outils ENC**
@@ -46,7 +60,9 @@ Outils disponibles :
 * Chemins de données.
 * Options avancées.
 
-### 🔹 Traduction (FR/EN)
+![Outils](resources/dialogtools.png)
+
+### 🔹 Traduction (FR/EN/ES/PT)
 
 Le plugin charge automatiquement la traduction correspondant à la langue de QGIS.
 
