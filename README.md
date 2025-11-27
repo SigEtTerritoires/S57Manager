@@ -38,6 +38,8 @@ Outils disponibles :
 * Définir **échelle minimale** et **échelle maximale** pour plusieurs couches sélectionnées.
 * Rafraîchissement automatique de la symbologie et du canevas.
 
+### Affichage des couches filtrées
+![Affichage des couches](resources/display2.jpg)
 ### 🔹 Paramètres du plugin
 
 * Choix du mode de stockage (GeoPackage, dossier S-57, etc.).
