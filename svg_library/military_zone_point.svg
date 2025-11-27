@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="1738.4662pt"
+   height="1830.6694pt"
+   viewBox="0 0 1738.4662 1830.6694"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg2646"
+   sodipodi:docname="military_zone_point.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2650" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="4200"
+     inkscape:window-height="2569"
+     id="namedview2648"
+     showgrid="false"
+     inkscape:zoom="0.13828125"
+     inkscape:cx="1151.7867"
+     inkscape:cy="1316.3473"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2646" />
+  <metadata
+     id="metadata2636">
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="matrix(0.1,0,0,-0.1,462.83998,1483.409)"
+     id="g2644"
+     style="fill:#ec00f1;fill-opacity:1;stroke:none">
+    <path
+       d="m 2920,12789 c 0,-17 64,-114 203,-309 170,-239 254,-402 320,-621 61,-201 72,-283 72,-569 0,-273 -9,-365 -62,-600 -89,-404 -243,-806 -519,-1360 C 2551,8564 2126,7868 875,5965 452,5322 391,5223 285,5005 -184,4046 -71,3140 624,2295 1228,1562 2305,867 3710,307 3883,238 4397,45 4485,16 c 29,-10 13,0 -155,100 -392,234 -695,468 -1001,773 -278,279 -456,516 -597,793 -266,524 -311,1043 -138,1578 239,740 548,1411 1246,2710 305,565 640,1223 749,1465 236,524 402,1045 431,1347 41,431 -163,1084 -580,1853 -265,491 -617,1033 -1004,1550 -256,342 -516,646 -516,604 z"
+       id="path2638"
+       inkscape:connector-curvature="0"
+       style="fill:#ec00f1;fill-opacity:1" />
+    <path
+       d="m 5690,8727 c 0,-4 40,-92 90,-195 110,-229 123,-277 122,-442 -1,-193 -35,-378 -119,-650 C 5622,6918 5383,6392 4682,5013 4109,3888 3940,3523 3837,3195 c -163,-521 -35,-1124 356,-1675 79,-112 197,-250 253,-296 79,-64 65,-34 -52,109 -100,123 -131,204 -141,377 -22,388 201,988 685,1850 63,113 221,383 351,600 437,733 608,1048 769,1415 179,410 350,945 388,1215 29,204 2,429 -76,640 -57,156 -193,424 -513,1010 -141,260 -167,304 -167,287 z"
+       id="path2640"
+       inkscape:connector-curvature="0"
+       style="fill:#ec00f1;fill-opacity:1" />
+    <path
+       d="m 7178,7070 c 44,-85 95,-197 112,-249 211,-628 18,-1687 -468,-2571 -99,-181 -227,-382 -598,-940 -494,-743 -629,-960 -779,-1259 -171,-343 -238,-555 -270,-861 -22,-204 -18,-413 12,-640 l 7,-55 7,67 c 32,299 299,612 1294,1514 884,802 1313,1451 1469,2224 29,144 47,326 53,535 15,556 -67,947 -281,1336 -35,63 -151,259 -258,435 -107,175 -232,382 -278,459 -45,77 -87,145 -93,150 -5,6 27,-60 71,-145 z"
+       id="path2642"
+       inkscape:connector-curvature="0"
+       style="fill:#ec00f1;fill-opacity:1" />
+  </g>
+  <ellipse
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ec00f1;stroke-width:100.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path3203"
+     cx="869.23309"
+     cy="915.33472"
+     rx="818.98309"
+     ry="865.08472" />
+</svg>

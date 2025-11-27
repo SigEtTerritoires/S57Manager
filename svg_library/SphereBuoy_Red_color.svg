@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="320"
+   height="320"
+   id="svg2"
+   sodipodi:docname="SphereBuoy_Red_color.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata10102">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="4200"
+     inkscape:window-height="2569"
+     id="namedview10100"
+     showgrid="false"
+     inkscape:zoom="11.325171"
+     inkscape:cx="164.74576"
+     inkscape:cy="166.77966"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4" />
+  <path
+     d="M 204.625,150.5625 C 198.95287,150.61148 193.21912,152.08618 188,155.15625 C 173.33853,163.78065 167.65756,181.96848 174.1875,197.21875 L 166.125,197.21875 L 166.125,202.875 L 187.84375,202.875 C 189.13107,208.40795 194.07702,212.53124 200,212.53125 C 205.92495,212.53125 210.87095,208.41073 212.15625,202.875 L 244.4375,202.90625 L 244.4375,197.25 L 235.84375,197.21875 C 240.08274,187.44688 239.41981,176.45743 233.875,167.03125 C 228.02725,157.09007 217.80259,151.30319 207.0625,150.625 C 206.25699,150.57414 205.4353,150.5555 204.625,150.5625 z M 200,192.53125 C 204.14,192.53125 207.5,195.89125 207.5,200.03125 C 207.5,204.17125 204.14,207.53125 200,207.53125 C 195.86,207.53125 192.5,204.17125 192.5,200.03125 C 192.5,195.89125 195.86,192.53125 200,192.53125 z"
+     id="path4347"
+     style="fill:#fc0207;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     transform="translate(-40,-40)" />
+</svg>

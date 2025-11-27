@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImportDialog</class>
+ <widget class="QDialog" name="ImportDialog">
+  <property name="windowTitle">
+   <string>Importer S57</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text"><string>Répertoire contenant les fichiers S57 (.000)</string></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="row">
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QLineEdit" name="lineDirectory"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBrowse">
+        <property name="text"><string>Parcourir</string></property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnStart">
+     <property name="text"><string>Démarrer l'import</string></property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

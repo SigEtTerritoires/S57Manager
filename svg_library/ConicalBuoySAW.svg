@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="83.84375"
+   height="120.38536"
+   id="svg2"
+   sodipodi:docname="ConicalBuoySAW.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata866">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="4200"
+     inkscape:window-height="2569"
+     id="namedview864"
+     showgrid="false"
+     inkscape:zoom="11.981703"
+     inkscape:cx="71.674258"
+     inkscape:cy="51.822034"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4" />
+  <path
+     d="m 58.25,51.979113 c -3.94627,0.0654 -7.53201,2.22066 -11.28125,5.1875 -3.99919,3.16463 -8.22839,7.49537 -12.65625,12.59375 -8.77416,10.10285 -18.27948,23.16687 -27.15625,35.312497 H 0 v 5.65625 h 29.6875 c 1.28732,5.53295 6.23327,9.65624 12.15625,9.65625 5.92495,0 10.87095,-4.12052 12.15625,-9.65625 h 29.84375 v -0.0625 -5.59375 H 76.125 c -1.27604,-11.327027 -2.18516,-23.372837 -4,-33.093747 -0.95465,-5.1134 -2.12258,-9.57496 -4,-13.15625 -1.87742,-3.58129 -4.96813,-6.61342 -9.09375,-6.84375 -0.26657,-0.0147 -0.51817,-0.004 -0.78125,0 z M 41.84375,100.38536 c 4.14,0 7.5,3.36 7.5,7.5 0,4.14 -3.36,7.5 -7.5,7.5 -4.14,0 -7.5,-3.36 -7.5,-7.5 0,-4.14 3.36,-7.5 7.5,-7.5 z"
+     id="path90440"
+     style="fill:#000407;fill-opacity:1;fill-rule:evenodd;stroke:none"
+     inkscape:connector-curvature="0" />
+  <ellipse
+     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#020200;stroke-width:3.03329468;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path5477-1"
+     cx="55.161575"
+     cy="42.225159"
+     rx="14.72581"
+     ry="12.657351"
+     transform="matrix(0.99741012,-0.07192394,0.13146882,0.99132031,0,0)" />
+</svg>

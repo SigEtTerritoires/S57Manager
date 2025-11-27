@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OptionsDialog</class>
+ <widget class="QDialog" name="OptionsDialog">
+  <property name="windowTitle">
+   <string>Options S57</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Groupbox stockage -->
+   <item>
+    <widget class="QGroupBox" name="groupStorage">
+     <property name="title">
+      <string>Mode de stockage</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutStorage">
+
+      <item>
+       <widget class="QRadioButton" name="radioGpkg">
+        <property name="text">
+         <string>GeoPackage</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QWidget" name="gpkgRow">
+        <layout class="QHBoxLayout" name="horizontalLayoutGpkg">
+         <item>
+          <widget class="QLineEdit" name="lineGpkgPath"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnBrowseGpkg">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QRadioButton" name="radioPostgis">
+        <property name="text">
+         <string>PostGIS (chaine PG)</string>
+        </property>
+       </widget>
+      </item>
+
+      <item>
+       <widget class="QComboBox" name="comboPgConn">
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+      <item>
+       <widget class="QPushButton" name="btnInstallSymbols">
+        <property name="text"><string>Installer bibliothèque de symboles svg</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnInstallStyles">
+        <property name="text"><string>Installer la symbologie par défaut S57</string></property>
+       </widget>
+      </item>
+	  
+	  
+   <item>
+   
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok|QDialogButtonBox::Cancel</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+
+
+btnInstallStyles
+ <resources/>
+ <connections/>
+</ui>

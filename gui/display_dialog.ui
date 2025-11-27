@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DisplayDialog</class>
+ <widget class="QDialog" name="DisplayDialog">
+  <property name="windowTitle">
+   <string>Afficher couches S57</string>
+  </property>
+
+  <layout class="QVBoxLayout">
+   <item>
+     <widget class="QLineEdit" name="lineSearch">
+       <property name="placeholderText">
+         <string>Rechercher une couche…</string>
+       </property>
+     </widget>
+   </item>
+
+   <item>
+     <widget class="QTreeWidget" name="treeLayers">
+       <column>
+         <property name="text">
+           <string>Couches</string>
+         </property>
+       </column>
+     </widget>
+   </item>
+
+   <item>
+     <layout class="QHBoxLayout">
+       <item>
+         <widget class="QPushButton" name="btnSelectAll">
+           <property name="text"><string>Tout sélectionner</string></property>
+         </widget>
+       </item>
+       <item>
+         <widget class="QPushButton" name="btnUnselectAll">
+           <property name="text"><string>Tout désélectionner</string></property>
+         </widget>
+       </item>
+     </layout>
+   </item>
+
+   <item>
+     <widget class="QPushButton" name="btnLoad">
+       <property name="text"><string>Charger les couches sélectionnées</string></property>
+     </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

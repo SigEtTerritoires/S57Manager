@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="4.6048002mm"
+   height="12.363997mm"
+   viewBox="0 0 13.052964 35.047513"
+   version="1.2"
+   id="svg865"
+   sodipodi:docname="oneway_forward.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata869">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="4200"
+     inkscape:window-height="2569"
+     id="namedview867"
+     showgrid="false"
+     inkscape:zoom="52.546822"
+     inkscape:cx="9.4679566"
+     inkscape:cy="30.829641"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg865" />
+  <title
+     id="title843">Qt SVG Document</title>
+  <desc
+     id="desc845">Generated with Qt</desc>
+  <defs
+     id="defs847" />
+  <g
+     id="g863"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+     transform="rotate(-90,9.5131338,24.010624)">
+    <g
+       font-size="8.1"
+       font-weight="400"
+       font-style="normal"
+       id="g851"
+       style="font-style:normal;font-weight:400;font-size:8.10000038px;font-family:'MS Shell Dlg 2';fill:none;stroke:#000000;stroke-width:3.00471997;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+      <path
+         d="M 0,16 H 32"
+         id="path849"
+         inkscape:connector-curvature="0"
+         style="vector-effect:none;fill-rule:evenodd" />
+    </g>
+    <g
+       font-size="8.1"
+       font-weight="400"
+       font-style="normal"
+       id="g855"
+       style="font-style:normal;font-weight:400;font-size:8.10000038px;font-family:'MS Shell Dlg 2';fill:none;stroke:#cb8d7b;stroke-width:2.43779993;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+      <path
+         d="M 0,16 H 32"
+         id="path853"
+         inkscape:connector-curvature="0"
+         style="vector-effect:none;fill-rule:evenodd" />
+    </g>
+    <g
+       font-size="8.1"
+       font-weight="400"
+       font-style="normal"
+       id="g859"
+       style="font-style:normal;font-weight:400;font-size:8.10000038px;font-family:'MS Shell Dlg 2';fill:#cb8d7b;fill-opacity:1;stroke:#232323;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+      <path
+         d="m 25.9213,22.2362 -4.9607,4.9607 V 24.7165 H 6.07874 V 19.7559 H 20.9606 v -2.4803 l 4.9607,4.9606"
+         id="path857"
+         inkscape:connector-curvature="0"
+         style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+    </g>
+    <g
+       font-size="8.1"
+       font-weight="400"
+       font-style="normal"
+       id="g861"
+       style="font-style:normal;font-weight:400;font-size:8.10000038px;font-family:'MS Shell Dlg 2';fill:none;stroke:#cb8d7b;stroke-width:2.43779993;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  </g>
+</svg>

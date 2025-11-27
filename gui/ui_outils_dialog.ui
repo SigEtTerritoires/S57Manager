@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ui_OutilsDialog</class>
+ <widget class="QDialog" name="OutilsDialog">
+  <property name="windowTitle">
+   <string>Outils ENC</string>
+  </property>
+  <layout class="QVBoxLayout">
+
+   <!-- SECTION : Filtrer par purpose -->
+   <item>
+    <widget class="QGroupBox" name="groupPurpose">
+     <property name="title">
+      <string>Filtrer les couches par "purpose"</string>
+     </property>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QComboBox" name="comboPurpose">
+        <item><property name="text"><string>1 - Vue d’ensemble</string></property></item>
+        <item><property name="text"><string>2 - Généralités</string></property></item>
+        <item><property name="text"><string>3 - Côtière</string></property></item>
+        <item><property name="text"><string>4 - Approche</string></property></item>
+        <item><property name="text"><string>5 - Port</string></property></item>
+        <item><property name="text"><string>6 - Accostage</string></property></item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnFilterPurpose">
+        <property name="text">
+         <string>Exécuter</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClearFilters">
+        <property name="text">
+         <string>Enlever tous les filtres</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- SECTION : Échelles -->
+   <item>
+    <widget class="QGroupBox" name="groupScale">
+     <property name="title">
+      <string>Définir échelles d'affichage pour les couches sélectionnées</string>
+     </property>
+     <layout class="QGridLayout">
+
+      <item row="0" column="0">
+       <widget class="QLabel">
+        <property name="text">
+         <string>Échelle minimale :</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="editScale">
+        <property name="placeholderText">
+         <string>ex : 250000</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel">
+        <property name="text">
+         <string>Échelle maximale :</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="editMaxScale">
+        <property name="placeholderText">
+         <string>ex : 10000</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="0" colspan="2">
+       <widget class="QPushButton" name="btnApplyScale">
+        <property name="text">
+         <string>Appliquer</string>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- Boutons bas -->
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+[general]
+name=S57Manager
+qgisMinimumVersion=3.0
+version=1.0.0
+author=Ton Nom
+email=ton.email@example.com
+description=Gestionnaire S-57 : import, stockage (GPKG/PostGIS) et affichage
+about=Plugin pour importer et gérer des cellules ENC S-57
+icon=icons/options.svg
+
+[experimental]
