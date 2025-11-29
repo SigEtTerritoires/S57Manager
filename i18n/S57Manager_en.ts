@@ -1103,7 +1103,7 @@
     <message>
         <location filename="../plugin.py" line="794"/>
         <source>Points / routes locales</source>
-        <translation>Points / LOca roads</translation>
+        <translation>Points / Local roads</translation>
     </message>
     <message>
         <location filename="../plugin.py" line="801"/>

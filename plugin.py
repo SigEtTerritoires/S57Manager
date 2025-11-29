@@ -26,6 +26,9 @@ from qgis.PyQt.QtWidgets import QApplication
 from qgis.core import QgsProject, QgsMapLayerType
 from qgis.PyQt.QtCore import QTranslator
 from PyQt5.QtCore import  QCoreApplication, QLocale
+from qgis.PyQt.QtGui import QIcon
+from . import resources_rc
+
 
 class S57ManagerPlugin:
     def __init__(self, iface):
@@ -51,19 +54,20 @@ class S57ManagerPlugin:
         qm_path = os.path.join(self.plugin_dir, f"i18n/S57Manager_{locale}.qm")
         if os.path.exists(qm_path) and self.translator.load(qm_path):
             QCoreApplication.installTranslator(self.translator)        
-        self.options_action = QAction(self.tr('Options S57'), self.iface.mainWindow())
+        self.options_action = QAction(QIcon(":/S57Manager/icons/settings.png"),self.tr('Options S57'), self.iface.mainWindow())
+ 
         self.options_action.triggered.connect(self.open_options)
 
-        self.import_action = QAction(self.tr('Importer S57'), self.iface.mainWindow())
+        self.import_action = QAction(QIcon(":/S57Manager/icons/import.png"),self.tr('Importer S57'), self.iface.mainWindow())
         self.import_action.triggered.connect(self.open_import)
 
-        self.display_action = QAction(self.tr('Afficher couches S57'), self.iface.mainWindow())
+        self.display_action = QAction(QIcon(":/S57Manager/icons/display.png"),self.tr('Afficher couches S57'), self.iface.mainWindow())
         self.display_action.triggered.connect(self.open_display)
 
         self.iface.addPluginToMenu('S57 Manager', self.options_action)
         self.iface.addPluginToMenu('S57 Manager', self.import_action)
         self.iface.addPluginToMenu('S57 Manager', self.display_action)
-        self.action_outils = QAction(self.tr("Outils ENC"), self.iface.mainWindow())
+        self.action_outils = QAction(QIcon(":/S57Manager/icons/outils.png"),self.tr("Outils ENC"), self.iface.mainWindow())
         self.action_outils.triggered.connect(self.open_outils_dialog)
         self.iface.addPluginToMenu("&S57 Manager", self.action_outils)
 

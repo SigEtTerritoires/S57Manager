@@ -1,11 +1,28 @@
 [general]
 name=S57Manager
-qgisMinimumVersion=3.0
+description=FR: Gestionnaire S-57 : import, stockage (GPKG/PostGIS) et affichage
+qgisMinimumVersion=3.28
+qgisMaximumVersion=3.99
 version=1.0.0
-author=Ton Nom
-email=ton.email@example.com
-description=Gestionnaire S-57 : import, stockage (GPKG/PostGIS) et affichage
-about=Plugin pour importer et gérer des cellules ENC S-57
-icon=icons/options.svg
+requires_qt=5,6
+supportsQt6=True
+author=Atilio FRANCOIS
+email=f2lmyvhnh@mozmail.com
+about=FR: 
+category=Analysis
+repository=https://github.com/SigEtTerritoires/S57Manager
+homepage=https://github.com/SigEtTerritoires/S57Manager
+tracker=https://github.com/SigEtTerritoires/S57Manager/issues
+tags=
+plugin= S57Manager
+icon=plugin_icon.png
+deprecated=false
+license=GPL-3.0
+translate=true
+experimental=False
 
-[experimental]
+changelog=
+
+    [1.0.0] - 2026-10-01
+    - Première version publique de S57Manager
+ 

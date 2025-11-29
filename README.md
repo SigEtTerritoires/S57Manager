@@ -15,7 +15,21 @@ Il permet notamment :
 
 ## 📦 **Fonctionnalités principales**
 
+
+* Import de fichiers ENC (.000) vers une base GeoPackage ou une base PostGIS.
+* Indexation automatique.
+* Nettoyage et organisation des tables.
+* Barre de progression pendant l’import.
+
+### Organisation des tables
+
+Avec l'option PostGIS, les tables sont stockées dans un schéma nommé "enc". Les noms des tables correspondent au nom S57 préfixé par pt_, li_ ou pl_ selon le type de géométrie.
+Avec l'option geopackage, les tables sont stockées dans un geopackage nommé "enc.gpkg". Les noms des tables correspondent au nom S57 préfixé par pt_, li_ ou pl_ selon le type de géométrie.
 ### 🔹 Options S-57
+
+* Choix du mode de stockage (GeoPackage, dossier S-57, etc.).
+* Chemins de données.
+* Options avancées.
 
 ![Options du plugin](resources/dialogsettings.png)
 
@@ -25,14 +39,10 @@ Le bouton **Installer les symboles svg** charge les fichiers nécessaires à la 
 
 ### 🔹 Import S-57
 
-* Import de fichiers ENC (.000) vers une base GeoPackage ou une base PostGIS.
-* Indexation automatique.
-* Nettoyage et organisation des tables.
-* Barre de progression pendant l’import.
-
 ![Import des fichier .000](resources/dialogimport.png)
 
 Le plugin balaye tout le répertoire et sous-répertoires. Il charge TOUS les fichiers .000 présents.
+
 ### 🔹 Affichage structuré des couches
 
 * Création d’un groupe QGIS contenant les couches classées par thèmes.
@@ -42,6 +52,7 @@ Le plugin balaye tout le répertoire et sous-répertoires. Il charge TOUS les fi
 ![Affichage des couches](resources/dialogdisplay.png)
 
 L'ordre de chargement est prévu pour assurer la visibilité de toutes les couches, sans masquages.
+
 ### 🔹 Outils ENC
 
 Accessible via **Menu → S57 Manager → Outils ENC**
@@ -52,15 +63,10 @@ Outils disponibles :
 * Définir **échelle minimale** et **échelle maximale** pour plusieurs couches sélectionnées.
 * Rafraîchissement automatique de la symbologie et du canevas.
 
-### Affichage des couches filtrées
-![Affichage des couches](resources/display2.jpg)
-### 🔹 Paramètres du plugin
-
-* Choix du mode de stockage (GeoPackage, dossier S-57, etc.).
-* Chemins de données.
-* Options avancées.
-
 ![Outils](resources/dialogtools.png)
+
+### Affichage final des couches
+![Affichage des couches](resources/display2.jpg)
 
 ### 🔹 Traduction (FR/EN/ES/PT)
 
