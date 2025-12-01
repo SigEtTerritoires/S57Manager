@@ -9,9 +9,10 @@ from qgis.core import (
     QgsProject, QgsField, QgsFeatureRequest, QgsVectorLayer, QgsWkbTypes,
     QgsFields
 )
-from PyQt5.QtCore import QVariant
+from qgis.PyQt.QtCore import QVariant
 import re
 from qgis.PyQt.QtSql import QSqlDatabase, QSqlQuery
+from qgis.PyQt.QtCore import QCoreApplication
 class S57Importer:
     def __init__(self, settings, db_manager):
         self.db_manager = db_manager
@@ -19,7 +20,8 @@ class S57Importer:
     # ------------------------------------------------------------------
     # IMPORT D’UN RÉPERTOIRE
     # ------------------------------------------------------------------
-
+    def tr(self, message):
+        return QCoreApplication.translate("S57Settings", message)
 
     def import_directory(self, directory, parent=None, progress=None):
         """
@@ -66,19 +68,26 @@ class S57Importer:
                 dbname = db_params.get("dbname", "")
                 user = db_params.get("user", "")
                 pwd = db_params.get("password", "")
-                # Connexion PostgreSQL via QtSql
-                
+
+                # --- 🔸 Création connexion QtSql ---
+                connection_name = "s57_manager_connection"
+                if QSqlDatabase.contains(connection_name):
+                    QSqlDatabase.removeDatabase(connection_name)
+
+                db = QSqlDatabase.addDatabase("QPSQL", connection_name)
                 db.setHostName(host)
                 db.setPort(int(port))
                 db.setDatabaseName(dbname)
                 db.setUserName(user)
                 db.setPassword(pwd)
-                
+
                 if not db.open():
                     raise Exception(self.tr("Impossible de se connecter à la base PostgreSQL"))
+
                 if progress:
                     progress.append_log(self.tr("  - Post-traitement des imports..."))
                     QApplication.processEvents()
+
                 query = QSqlQuery(db)
                 if not query.exec("SELECT public.clone_tables_with_prefix();"):
                     raise Exception(f"Erreur SQL : {query.lastError().text()}")

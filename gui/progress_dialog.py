@@ -1,10 +1,10 @@
 import time
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
-from PyQt5.QtWidgets import (
+from qgis.PyQt.QtCore import Qt, QThread, pyqtSignal
+from qgis.PyQt.QtWidgets import (
     QDialog, QVBoxLayout, QLabel, QProgressBar,
     QTextEdit, QPushButton, QHBoxLayout, QFileDialog
 )
-from PyQt5.QtWidgets import QApplication
+from qgis.PyQt.QtWidgets import QApplication
 
 
 class WorkerSignals:

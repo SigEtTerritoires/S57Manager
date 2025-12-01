@@ -25,9 +25,9 @@ from .outils_dialog import OutilsDialog
 from qgis.PyQt.QtWidgets import QApplication
 from qgis.core import QgsProject, QgsMapLayerType
 from qgis.PyQt.QtCore import QTranslator
-from PyQt5.QtCore import  QCoreApplication, QLocale
+from qgis.PyQt.QtCore import  QCoreApplication, QLocale
 from qgis.PyQt.QtGui import QIcon
-from . import resources_rc
+
 
 
 class S57ManagerPlugin:
@@ -53,21 +53,24 @@ class S57ManagerPlugin:
         self.translator = QTranslator()
         qm_path = os.path.join(self.plugin_dir, f"i18n/S57Manager_{locale}.qm")
         if os.path.exists(qm_path) and self.translator.load(qm_path):
-            QCoreApplication.installTranslator(self.translator)        
-        self.options_action = QAction(QIcon(":/S57Manager/icons/settings.png"),self.tr('Options S57'), self.iface.mainWindow())
+            QCoreApplication.installTranslator(self.translator) 
+        icon1 = QIcon(os.path.join(self.plugin_dir, "icons/settings.png"))            
+        self.options_action = QAction(icon1,self.tr('Options S57'), self.iface.mainWindow())
+        icon2 = QIcon(os.path.join(self.plugin_dir, "icons/import.png"))
  
         self.options_action.triggered.connect(self.open_options)
-
-        self.import_action = QAction(QIcon(":/S57Manager/icons/import.png"),self.tr('Importer S57'), self.iface.mainWindow())
+        icon3 = QIcon(os.path.join(self.plugin_dir, "icons/display.png"))
+        self.import_action = QAction(icon2,self.tr('Importer S57'), self.iface.mainWindow())
         self.import_action.triggered.connect(self.open_import)
 
-        self.display_action = QAction(QIcon(":/S57Manager/icons/display.png"),self.tr('Afficher couches S57'), self.iface.mainWindow())
+        self.display_action = QAction(icon3,self.tr('Afficher couches S57'), self.iface.mainWindow())
         self.display_action.triggered.connect(self.open_display)
 
         self.iface.addPluginToMenu('S57 Manager', self.options_action)
         self.iface.addPluginToMenu('S57 Manager', self.import_action)
         self.iface.addPluginToMenu('S57 Manager', self.display_action)
-        self.action_outils = QAction(QIcon(":/S57Manager/icons/outils.png"),self.tr("Outils ENC"), self.iface.mainWindow())
+        icon4 = QIcon(os.path.join(self.plugin_dir, "icons/display.png"))        
+        self.action_outils = QAction(icon4,self.tr("Outils ENC"), self.iface.mainWindow())
         self.action_outils.triggered.connect(self.open_outils_dialog)
         self.iface.addPluginToMenu("&S57 Manager", self.action_outils)
 
@@ -318,11 +321,61 @@ class S57ManagerPlugin:
                 QMessageBox.critical(dialog, "Erreur", self.tr("Fichier SQL introuvable : {}").format(dump_file))
                 return
 
+            # ----- Fonction pour parser la chaîne de connexion -----
+            def parse_conninfo(conninfo: str) -> dict:
+                params = {}
+                for part in conninfo.split():
+                    if "=" in part:
+                        k, v = part.split("=", 1)
+                        params[k.strip()] = v.strip()
+                return params
+
+            # ----- Fonction pour remplacer f_table_catalog dans layer_styles -----
+            def update_layerstyles_dbname(conn_string, new_dbname):
+                from qgis.PyQt.QtSql import QSqlDatabase, QSqlQuery
+
+                db_params = parse_conninfo(conn_string)
+
+                conn_name = "s57_layerstyles_update"
+                if QSqlDatabase.contains(conn_name):
+                    QSqlDatabase.removeDatabase(conn_name)
+                db = QSqlDatabase.addDatabase("QPSQL", conn_name)
+                db.setHostName(db_params.get("host", "localhost"))
+                db.setPort(int(db_params.get("port", "5432")))
+                db.setDatabaseName(db_params.get("dbname", ""))
+                db.setUserName(db_params.get("user", ""))
+                db.setPassword(db_params.get("password", ""))
+
+                if not db.open():
+                    raise Exception("Impossible d’ouvrir la connexion PostgreSQL")
+
+                query = QSqlQuery(db)
+                sql = f"UPDATE public.layer_styles SET f_table_catalog = '{new_dbname}' WHERE f_table_catalog = 'S100';"
+                if not query.exec(sql):
+                    err = query.lastError().text()
+                    db.close()
+                    raise Exception(f"Erreur SQL lors du remplacement de f_table_catalog : {err}")
+
+                db.commit()
+                db.close()
+                
             try:
+                # 1️⃣ Charger les styles depuis le dump
                 self.load_layerstyles(dump_file, conn_string)
-                QMessageBox.information(dialog, "Succès", self.tr("La symbologie par défaut a été installée"))
+
+                # 2️⃣ Remplacer le nom de la base
+                db_params = parse_conninfo(conn_string)
+                dbname = db_params.get("dbname", "")
+                update_layerstyles_dbname(conn_string, dbname)
+
+                QMessageBox.information(dialog, "Succès",
+                    self.tr("La symbologie par défaut a été installée"))
             except Exception as e:
-                QMessageBox.critical(dialog, "Erreur",self.tr("Impossible d'installer les styles :\n{}").format(str(e)))
+                QMessageBox.critical(dialog, "Erreur",
+                    self.tr("Impossible d'installer les styles :\n{}").format(str(e)))
+ 
+            # ----- Connexion du bouton -----
+            dialog.btnInstallStyles.clicked.connect(on_install_styles_pg) 
         def on_install_styles_gpkg():
             directory = dialog.lineGpkgPath.text().strip()
             if not directory or not os.path.isdir(directory):
@@ -456,7 +509,7 @@ class S57ManagerPlugin:
 
             if user_svg_path is None:
                 # Fallback (rare)
-                user_profile = QStandardPaths.writableLocation(QStandardPaths.AppDataLocation)
+                user_profile = QStandardPaths.writableLocation(QStandardPaths.StandardLocation.AppDataLocation)
                 user_svg_path = os.path.join(user_profile, "svg")
 
             # chemin final
@@ -468,7 +521,7 @@ class S57ManagerPlugin:
         dialog.buttonBox.rejected.connect(dialog.reject)
 
         # ----- Affichage du dialogue -----
-        dialog.exec_()
+        dialog.exec()
     def open_import(self):
         ui_path = os.path.join(os.path.dirname(__file__), 'gui', 'import_dialog.ui')
         from qgis.PyQt import uic
@@ -521,7 +574,7 @@ class S57ManagerPlugin:
 
 
         dialog.btnStart.clicked.connect(on_start)
-        dialog.exec_()
+        dialog.exec()
 
 
 
@@ -547,17 +600,17 @@ class S57ManagerPlugin:
                     unchecked = 0
                     for i in range(parent.childCount()):
                         cs = parent.child(i).checkState(0)
-                        if cs == Qt.Checked:
+                        if cs == Qt.CheckState.Checked:
                             checked += 1
-                        elif cs == Qt.Unchecked:
+                        elif cs == Qt.CheckState.Unchecked:
                             unchecked += 1
 
                     if checked == parent.childCount():
-                        parent.setCheckState(0, Qt.Checked)
+                        parent.setCheckState(0, Qt.CheckState.Checked)
                     elif unchecked == parent.childCount():
-                        parent.setCheckState(0, Qt.Unchecked)
+                        parent.setCheckState(0, Qt.CheckState.Unchecked)
                     else:
-                        parent.setCheckState(0, Qt.PartiallyChecked)
+                        parent.setCheckState(0, Qt.CheckState.PartiallyChecked)
 
             # Réactiver les signaux
             tree.blockSignals(False)
@@ -843,7 +896,7 @@ class S57ManagerPlugin:
             # Créer groupe si pas encore créé
             if group_name not in groups:
                 parent = QTreeWidgetItem([group_name])
-                parent.setCheckState(0, Qt.Checked)
+                parent.setCheckState(0, Qt.CheckState.Checked)
                 tree.addTopLevelItem(parent)
                 groups[group_name] = parent
             else:
@@ -851,7 +904,7 @@ class S57ManagerPlugin:
 
             # Créer couche
             child = QTreeWidgetItem([layer_name])
-            child.setCheckState(0, Qt.Checked)
+            child.setCheckState(0, Qt.CheckState.Checked)
             parent.addChild(child)
 
         # -------------------------------------------------------------------------------------
@@ -867,13 +920,13 @@ class S57ManagerPlugin:
             else:
                 # enfant modifié → mettre le parent en checked / unchecked / partiel
                 parent = item.parent()
-                checked = sum(child.checkState(0) == Qt.Checked for child in [parent.child(i) for i in range(parent.childCount())])
+                checked = sum(child.checkState(0) == Qt.CheckState.Checked for child in [parent.child(i) for i in range(parent.childCount())])
                 if checked == parent.childCount():
-                    parent.setCheckState(0, Qt.Checked)
+                    parent.setCheckState(0, Qt.CheckState.Checked)
                 elif checked == 0:
-                    parent.setCheckState(0, Qt.Unchecked)
+                    parent.setCheckState(0, Qt.CheckState.Unchecked)
                 else:
-                    parent.setCheckState(0, Qt.PartiallyChecked)
+                    parent.setCheckState(0, Qt.CheckState.PartiallyChecked)
 
         tree.itemChanged.connect(on_item_changed)
 
@@ -905,20 +958,20 @@ class S57ManagerPlugin:
             tree.blockSignals(True)
             for i in range(tree.topLevelItemCount()):
                 parent = tree.topLevelItem(i)
-                parent.setCheckState(0, Qt.Checked)
+                parent.setCheckState(0, Qt.CheckState.Checked)
                 for j in range(parent.childCount()):
                     child = parent.child(j)
-                    child.setCheckState(0, Qt.Checked)
+                    child.setCheckState(0, Qt.CheckState.Checked)
             tree.blockSignals(False)
 
         def unselect_all():
             tree.blockSignals(True)
             for i in range(tree.topLevelItemCount()):
                 parent = tree.topLevelItem(i)
-                parent.setCheckState(0, Qt.Unchecked)
+                parent.setCheckState(0, Qt.CheckState.Unchecked)
                 for j in range(parent.childCount()):
                     child = parent.child(j)
-                    child.setCheckState(0, Qt.Unchecked)
+                    child.setCheckState(0, Qt.CheckState.Unchecked)
             tree.blockSignals(False)
 
 
@@ -935,7 +988,7 @@ class S57ManagerPlugin:
                 parent = tree.topLevelItem(i)
                 for j in range(parent.childCount()):
                     child = parent.child(j)
-                    if child.checkState(0) == Qt.Checked:
+                    if child.checkState(0) == Qt.CheckState.Checked:
                         selected.append(child.text(0))
 
             if not selected:
@@ -948,7 +1001,7 @@ class S57ManagerPlugin:
         btn_load.clicked.connect(load_selected)
 
         # -------------------------------------------------------------------------------------
-        dialog.exec_()
+        dialog.exec()
 
 
 
@@ -974,7 +1027,7 @@ class S57ManagerPlugin:
             return None
 
         # 2. Dossier utilisateur officiel QGIS
-        user_profile = QStandardPaths.writableLocation(QStandardPaths.AppDataLocation)
+        user_profile = QStandardPaths.writableLocation(QStandardPaths.StandardLocation.AppDataLocation)
         svg_user_dir = os.path.join(user_profile, "svg")
         os.makedirs(svg_user_dir, exist_ok=True)
 

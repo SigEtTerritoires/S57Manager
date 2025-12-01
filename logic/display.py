@@ -229,7 +229,8 @@ class S57Display:
             ('pt_daymar', 100000000),
             ('pt_watfal', 100000000)
         ]
-
+    def tr(self, message):
+        return QCoreApplication.translate("S57Settings", message)
     def load_layers(self, selected_tables):
         from qgis.core import (
             QgsProject, QgsVectorLayer, QgsDataSourceUri, QgsMapLayerStyle

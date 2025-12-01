@@ -30,7 +30,8 @@ class OptionsDialog(BaseDialog, OptionsDialogUI):
         # Autres initialisations
         self.populatePostgisConnections()
         self.updateGui()
-
+    def tr(self, message):
+        return QCoreApplication.translate("S57Settings", message)
 
     def populatePostgisConnections(self):
         """Remplit la combo avec toutes les connexions PostGIS existantes dans QGIS"""
