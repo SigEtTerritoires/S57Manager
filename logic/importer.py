@@ -39,7 +39,8 @@ class S57Importer:
                         files.append(os.path.join(root, f))
 
             if not files:
-                QgsMessageLog.logMessage(self.tr('Aucun fichier .000 trouvé'), 'S57Manager')
+                
+                QgsMessageLog.logMessage(self.tr("Aucun fichier .000 trouvé dans {}").format(directory), "S57Manager")
                 return
             total = len(files)
             for idx, f in enumerate(files, start=1):

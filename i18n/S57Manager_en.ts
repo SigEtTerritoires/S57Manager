@@ -58,6 +58,264 @@
     </message>
 </context>
 <context>
+    <name>NoaaDialog</name>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="48"/>
+        <source>Filtres NOAA ENC</source>
+        <translation>NOAA ENC filters</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="52"/>
+        <source>Limiter à l’emprise de la carte</source>
+        <translation>Limit to the canvas extent</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="53"/>
+        <source>Adapter à l’échelle courante</source>
+        <translation>Adjust to the current scale</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="59"/>
+        <source>Échelle ENC</source>
+        <translation>ENC scale</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="86"/>
+        <source>Overview</source>
+        <translation>Overview</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="87"/>
+        <source>General</source>
+        <translation>General</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="88"/>
+        <source>Coastal</source>
+        <translation>Coastal</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="89"/>
+        <source>Approach</source>
+        <translation>Approach</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="90"/>
+        <source>Harbour</source>
+        <translation>Harbour</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="91"/>
+        <source>Berthing</source>
+        <translation>Berthing</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <source>Nom</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <source>Purpose</source>
+        <translation>Purpose</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <source>Échelle</source>
+        <translation>Scale</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="136"/>
+        <source>Importer la cellule sélectionnée</source>
+        <translation>Import the selected cell</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="137"/>
+        <source>Fermer</source>
+        <translation>Close</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="138"/>
+        <source>Télécharger le catalogue NOAA</source>
+        <translation>Download the NOAA catalog</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="148"/>
+        <source>NOAA ENC – Catalogue</source>
+        <translation>NOAA ENC – Catalog</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="200"/>
+        <source>Chargement du catalogue NOAA…</source>
+        <translation>Loading NOAA catalog...</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="206"/>
+        <source>❌ Erreur catalogue : {}</source>
+        <translation>❌ Catalog error: {}</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="211"/>
+        <source>✔ {} cellules chargées</source>
+        <translation>✔ {} cells loaded</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="229"/>
+        <source>⚠ Aucune cellule sélectionnée</source>
+        <translation>⚠ No cells selected</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="238"/>
+        <source>❌ Erreur interne : cellule invalide</source>
+        <translation>❌ Internal error: invalid cell</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="285"/>
+        <source>✔ {message}</source>
+        <translation>✔ {message}</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="287"/>
+        <source>❌ {message}</source>
+        <translation>❌ {message}</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="401"/>
+        <source>🔎 {} cellules affichées après filtrage</source>
+        <translation>🔎 {} cells displayed after filtering</translation>
+    </message>
+</context>
+<context>
+    <name>NoaaEncCatalog</name>
+    <message>
+        <location filename="../logic/noaa/catalog.py" line="52"/>
+        <source>Impossible de charger le catalogue NOAA : {}</source>
+        <translation>Unable to load the NOAA catalog: {}</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/catalog.py" line="89"/>
+        <source>Catalogue NOAA chargé mais aucune cellule détectée</source>
+        <translation></translation>
+    </message>
+</context>
+<context>
+    <name>NoaaEncDownloader</name>
+    <message>
+        <location filename="../logic/noaa/downloader.py" line="47"/>
+        <source>Cellule {} n&apos;a pas d&apos;URL de téléchargement.</source>
+        <translation>Cell {} does not have a download URL.</translation>
+    </message>
+</context>
+<context>
+    <name>NoaaEncImporter</name>
+    <message>
+        <location filename="../logic/noaa/importer.py" line="38"/>
+        <source>Fichier S-57 introuvable après extraction : {}</source>
+        <translation>S-57 file not found after extraction: {}</translation>
+    </message>
+</context>
+<context>
+    <name>NoaaUpdater</name>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="26"/>
+        <source>➡ Début mise à jour cellule {}</source>
+        <translation>➡ Start cell update {}</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="32"/>
+        <source>📂 Répertoire de travail : {}</source>
+        <translation>📂 Working directory: {}</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="36"/>
+        <source>⬇ Téléchargement de la cellule : {}...</source>
+        <translation>⬇ Download cell: {}...</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="38"/>
+        <source>✔ Téléchargé :  {}</source>
+        <translation>✔ Downloaded: {}</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="40"/>
+        <source>❌ Erreur téléchargement : {}</source>
+        <translation>❌ Download error: {}</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="45"/>
+        <source>🔍 Validation du ZIP…}</source>
+        <translation type="obsolete">🔍 ZIP validation...</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="47"/>
+        <source>✔ ZIP valide</source>
+        <translation>✔ Valid ZIP code</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="49"/>
+        <source>❌ Erreur validation : {}</source>
+        <translation>❌ Validation error: {}</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="54"/>
+        <source>📥 Import S-57…</source>
+        <translation>📥 Import S-57…</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="56"/>
+        <source>✔ Import réussi</source>
+        <translation>✔ Import successful</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="58"/>
+        <source>❌ Erreur import : {}</source>
+        <translation>❌ Import error: {}</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="61"/>
+        <source>✅ Cellule {} mise à jour avec succès</source>
+        <translation>✅ Cell {} successfully updated</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/updater.py" line="45"/>
+        <source>🔍 Validation du ZIP…</source>
+        <translation>🔍 ZIP validation...</translation>
+    </message>
+</context>
+<context>
+    <name>NoaaWorker</name>
+    <message>
+        <location filename="../logic/noaa/noaa_worker.py" line="41"/>
+        <source>Téléchargement de la cellule {}…</source>
+        <translation>Downloading cell {}…</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/noaa_worker.py" line="44"/>
+        <source>Décompression de {}…</source>
+        <translation>Unzipping {}...</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/noaa_worker.py" line="50"/>
+        <source>Import des fichiers S-57 dans QGIS…</source>
+        <translation>Importing S-57 files into QGIS...</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/noaa_worker.py" line="58"/>
+        <source>Import de {} terminé</source>
+        <translation>Import of {} completed</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/noaa_worker.py" line="59"/>
+        <source>Cellule {} importée avec succès</source>
+        <translation>Cell {} successfully imported</translation>
+    </message>
+    <message>
+        <location filename="../logic/noaa/noaa_worker.py" line="62"/>
+        <source>Erreur : {}</source>
+        <translation>Error: {}</translation>
+    </message>
+</context>
+<context>
     <name>OptionsDialog</name>
     <message>
         <location filename="../gui/options_dialog.ui" line="6"/>
@@ -95,17 +353,17 @@
         <translation>Install the default S57 symbology</translation>
     </message>
     <message>
-        <location filename="../dialogs/options_dialog.py" line="90"/>
+        <location filename="../dialogs/options_dialog.py" line="91"/>
         <source>Connexion manquante</source>
         <translation>Missing connection</translation>
     </message>
     <message>
-        <location filename="../dialogs/options_dialog.py" line="90"/>
+        <location filename="../dialogs/options_dialog.py" line="91"/>
         <source>Veuillez choisir une connexion PostGIS.</source>
         <translation>Please select a PostGIS connection.</translation>
     </message>
     <message>
-        <location filename="../dialogs/options_dialog.py" line="111"/>
+        <location filename="../dialogs/options_dialog.py" line="112"/>
         <source>La symbologie par défaut a été installée dans la base PostGIS.</source>
         <translation>The default symbology has been installed in the PostGIS database.</translation>
     </message>
@@ -204,7 +462,7 @@
 <context>
     <name>S57Display</name>
     <message>
-        <location filename="../logic/display.py" line="307"/>
+        <location filename="../logic/display.py" line="308"/>
         <source>Aucun GeoPackage ENC.gpkg n&apos;est défini dans les options.</source>
         <translation>No ENC.gpkg GeoPackage is defined in the options.</translation>
     </message>
@@ -214,219 +472,219 @@
     <message>
         <location filename="../logic/importer.py" line="40"/>
         <source>Aucun fichier .000 trouvé</source>
-        <translation>No .000 files found</translation>
+        <translation type="obsolete">No .000 files found</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="48"/>
+        <location filename="../logic/importer.py" line="51"/>
         <source>📄 Fichier {} / {}  : {} </source>
         <translation>📄 File {} / {}  : {} </translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="78"/>
+        <location filename="../logic/importer.py" line="86"/>
         <source>Impossible de se connecter à la base PostgreSQL</source>
         <translation>Unable to connect to the PostgreSQL database</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="80"/>
+        <location filename="../logic/importer.py" line="89"/>
         <source>  - Post-traitement des imports...</source>
         <translation>  - Post-processing of imports...</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="91"/>
+        <location filename="../logic/importer.py" line="101"/>
         <source>✔ Mise à jour du schéma enc terminée.</source>
         <translation>✔ Enc schema update complete.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="96"/>
+        <location filename="../logic/importer.py" line="106"/>
         <source>❌ Erreur clone_tables_with_prefix :
 {}</source>
         <translation>❌ Error clone_tables_with_prefix :
 {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="106"/>
+        <location filename="../logic/importer.py" line="116"/>
         <source>Chemin GPKG non configuré dans les options.</source>
         <translation>GPKG path not configured in the options.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="107"/>
+        <location filename="../logic/importer.py" line="117"/>
         <source>Veuillez configurer le chemin du GeoPackage dans les options.</source>
         <translation>Please configure the GeoPackage path in the options.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="121"/>
+        <location filename="../logic/importer.py" line="131"/>
         <source>IImpossible de récupérer la connexion PostGIS:
 {}</source>
         <translation>Unable to retrieve the PostGIS connection:
 {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="138"/>
+        <location filename="../logic/importer.py" line="148"/>
         <source>📄 Fichier  {}</source>
         <translation>📄 File  {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="194"/>
+        <location filename="../logic/importer.py" line="204"/>
         <source>Import terminé</source>
         <translation>Import complete</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="239"/>
+        <location filename="../logic/importer.py" line="249"/>
         <source>Impossible d&apos;ouvrir le GeoPackage : {}</source>
         <translation>Unable to open GeoPackage: {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="298"/>
+        <location filename="../logic/importer.py" line="308"/>
         <source>❌ Impossible d&apos;ouvrir le GeoPackage.</source>
         <translation>❌ Unable to open the GeoPackage.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="458"/>
+        <location filename="../logic/importer.py" line="468"/>
         <source>Répertoire invalide.</source>
         <translation>Invalid directory.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="462"/>
+        <location filename="../logic/importer.py" line="472"/>
         <source>GeoPackage introuvable : {}</source>
         <translation>GeoPackage not found: {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="468"/>
+        <location filename="../logic/importer.py" line="478"/>
         <source>Aucun fichier .000 trouvé.</source>
         <translation>No .000 files found.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="473"/>
+        <location filename="../logic/importer.py" line="483"/>
         <source>Répertoire GeoPackage invalide ou non défini.</source>
         <translation>Invalid or undefined GeoPackage directory.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="483"/>
+        <location filename="../logic/importer.py" line="493"/>
         <source>📄 Fichier {} / {} : {}</source>
         <translation>📄 File {} / {} : {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="488"/>
+        <location filename="../logic/importer.py" line="498"/>
         <source>[{} / {} ] Traitement de {}</source>
         <translation>[{} / {} ] Prrocessing {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="490"/>
+        <location filename="../logic/importer.py" line="500"/>
         <source>  • Extraction des points…</source>
         <translation>  • Point extraction...</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="644"/>
+        <location filename="../logic/importer.py" line="654"/>
         <source>  • Création des tables DSID et C_AGGR…</source>
         <translation>  • Creation of the DSID and C_AGGR tables...</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="594"/>
+        <location filename="../logic/importer.py" line="604"/>
         <source>  • Mise à jour de POSACC et QUAPOS des tables…</source>
         <translation>  • Update of POSACC and QUAPOS tables...</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="550"/>
+        <location filename="../logic/importer.py" line="560"/>
         <source>  • Extraction des lignes…</source>
         <translation>  • Extracting lines...</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="663"/>
+        <location filename="../logic/importer.py" line="673"/>
         <source>  • Remplissage des tables avec DSID et C_AGGR…</source>
         <translation>  • Filling tables with DSID and C_AGGR...</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="608"/>
+        <location filename="../logic/importer.py" line="618"/>
         <source>Impossible de créer {}</source>
         <translation>Unable to create {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="612"/>
+        <location filename="../logic/importer.py" line="622"/>
         <source>✅ Création du GeoPackage vide : {}</source>
         <translation>✅ Creation of empty GeoPackage: {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="619"/>
+        <location filename="../logic/importer.py" line="629"/>
         <source>[{}/{}] Traitement {} (polygones)…</source>
         <translation>[{}/{}] Processing {} (polygons)…</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="640"/>
+        <location filename="../logic/importer.py" line="650"/>
         <source>Erreur sur {} :</source>
         <translation>Error onr {} :</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="653"/>
+        <location filename="../logic/importer.py" line="663"/>
         <source>Erreur sur {}, couche {} : {}</source>
         <translation>Error on {}, layer {}: {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="687"/>
+        <location filename="../logic/importer.py" line="697"/>
         <source>⚠ Impossible d’ouvrir {} pour nettoyage.</source>
         <translation>⚠ Unable to open {} for cleanup.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="698"/>
+        <location filename="../logic/importer.py" line="708"/>
         <source>🗑 Suppression de la table {}</source>
         <translation>🗑 Deletion of table {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="701"/>
+        <location filename="../logic/importer.py" line="711"/>
         <source>⚠ Impossible de supprimer {} : {}</source>
         <translation>⚠ Unable to delete {} : {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="706"/>
+        <location filename="../logic/importer.py" line="716"/>
         <source>✔ Tous les contenus de {} ont été supprimés.</source>
         <translation>✔ All content from {} has been deleted.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="726"/>
+        <location filename="../logic/importer.py" line="736"/>
         <source>✔ Création du GeoPackage {}</source>
         <translation>✔ Creation of the GeoPackage {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="734"/>
+        <location filename="../logic/importer.py" line="744"/>
         <source>🔄 Ouverture du GeoPackage source : {}</source>
         <translation>🔄 Opening the source GeoPackage: {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="739"/>
+        <location filename="../logic/importer.py" line="749"/>
         <source>❌ Impossible d&apos;ouvrir le GeoPackage {}</source>
         <translation>❌ Unable to open GeoPackage {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="745"/>
+        <location filename="../logic/importer.py" line="755"/>
         <source>❌ Impossible d&apos;ouvrir le GeoPackage de destination {}</source>
         <translation>❌ Unable to open the destination GeoPackage {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="748"/>
+        <location filename="../logic/importer.py" line="758"/>
         <source>🔄 Ouverture du GeoPackage destination : {}</source>
         <translation>🔄 Opening the destination GeoPackage: {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="757"/>
+        <location filename="../logic/importer.py" line="767"/>
         <source> Table non géométrique {} ignorée pour {}</source>
         <translation> Non-geometric table {} ignored for {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="762"/>
+        <location filename="../logic/importer.py" line="772"/>
         <source>📄 Traitement de la table {} → {}</source>
         <translation>📄 Processing of table {} → {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="767"/>
+        <location filename="../logic/importer.py" line="777"/>
         <source>⚠ Table {} ignorée (aucune entité)</source>
         <translation>⚠ Table {} ignored (no entities)</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="787"/>
+        <location filename="../logic/importer.py" line="797"/>
         <source>  • Création de la couche {}</source>
         <translation>  • Creation of the {} layer</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="803"/>
+        <location filename="../logic/importer.py" line="813"/>
         <source>  • Copie des {} entités de {}</source>
         <translation>  • Copy the {} entities from {}</translation>
     </message>
@@ -436,50 +694,55 @@
         <translation type="obsolete">SELECT CreateSpatialIndex(&apos;{}&apos;, &apos;{}&apos;)</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="808"/>
+        <location filename="../logic/importer.py" line="818"/>
         <source>⚠ Index spatial déjà existant pour {}</source>
         <translation>⚠ Spatial index already exists for {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="810"/>
+        <location filename="../logic/importer.py" line="820"/>
         <source>  • Index spatial créé pour {}</source>
         <translation>  • Spatial index created for {}</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="815"/>
+        <location filename="../logic/importer.py" line="825"/>
         <source>✔ Contenu de {} ajouté dans ENC.gpkg</source>
         <translation>✔ Content of {} added to ENC.gpkg</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="830"/>
+        <location filename="../logic/importer.py" line="840"/>
         <source>❌ Couche natsurf introuvable dans ENC.gpkg</source>
         <translation>❌ Layer natsurf not found in ENC.gpkg</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="986"/>
+        <location filename="../logic/importer.py" line="996"/>
         <source>✔ Calcul des étiquettes Label terminé.</source>
         <translation>✔ Label calculation complete.</translation>
     </message>
     <message>
-        <location filename="../logic/importer.py" line="991"/>
+        <location filename="../logic/importer.py" line="1001"/>
         <source>✅ Mise à jour ENC.gpkg terminée.</source>
         <translation>✅ ENC.gpkg update complete.</translation>
+    </message>
+    <message>
+        <location filename="../logic/importer.py" line="43"/>
+        <source>Aucun fichier .000 trouvé dans {}</source>
+        <translation>No .000 files found in {}</translation>
     </message>
 </context>
 <context>
     <name>S57ManagerPlugin</name>
     <message>
-        <location filename="../plugin.py" line="123"/>
+        <location filename="../plugin.py" line="148"/>
         <source>Choisir un répertoire pour les GeoPackages</source>
         <translation>Select a directory for GeoPackages</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="138"/>
+        <location filename="../plugin.py" line="163"/>
         <source>Veuillez choisir un dossier valide.</source>
         <translation>Please select a valid folder.</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="155"/>
+        <location filename="../plugin.py" line="180"/>
         <source>Erreur lors de la création des GeoPackages :
 {}</source>
         <translation>Error creating GeoPackages:
@@ -498,689 +761,694 @@
         <translation type="obsolete">The necessary GeoPackages have been verified/created.</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="174"/>
+        <location filename="../plugin.py" line="199"/>
         <source>Impossible de récupérer la connexion PostGIS</source>
         <translation>Unable to retrieve PostGIS connection</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="180"/>
+        <location filename="../plugin.py" line="205"/>
         <source>Erreur connexion PostGIS:
  {}</source>
         <translation>PostGIS connection error:
  {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="189"/>
+        <location filename="../plugin.py" line="215"/>
         <source>Erreur lors de la création des schémas :
 {}</source>
         <translation>Error creating schemas:
 {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="257"/>
+        <location filename="../plugin.py" line="283"/>
         <source>Fichier existant mais invalide</source>
         <translation>File exists but is invalid</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="266"/>
+        <location filename="../plugin.py" line="292"/>
         <source>Impossible de créer un GeoPackage valide : {}</source>
         <translation>Unable to create a valid GeoPackage: {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="299"/>
+        <location filename="../plugin.py" line="325"/>
         <source>Aucune connexion PostGIS valide</source>
         <translation>No valid PostGIS connection</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="306"/>
+        <location filename="../plugin.py" line="332"/>
         <source>Fichier SQL introuvable : {}</source>
         <translation>SQL file not found: {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="311"/>
+        <location filename="../plugin.py" line="382"/>
         <source>La symbologie par défaut a été installée</source>
         <translation>The default symbology has been installed</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="313"/>
+        <location filename="../plugin.py" line="385"/>
         <source>Impossible d&apos;installer les styles :
 {}</source>
         <translation>Unable to install styles:
 {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="317"/>
+        <location filename="../plugin.py" line="393"/>
         <source>Veuillez sélectionner un répertoire GPKG valide.</source>
         <translation>Please select a valid GPKG directory.</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="322"/>
+        <location filename="../plugin.py" line="398"/>
         <source>Le fichier ENC.gpkg est introuvable dans :
  {}</source>
         <translation>The ENC.gpkg file cannot be found in:
  {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="352"/>
+        <location filename="../plugin.py" line="428"/>
         <source>Tables layer_styles et natsurf copiées dans ENC.gpkg.</source>
         <translation>Tables layer_styles and natsurf copied to ENC.gpkg.</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="378"/>
+        <location filename="../plugin.py" line="454"/>
         <source>Impossible d’ouvrir le GeoPackage destination : {}</source>
         <translation>❌ Unable to open the destination GeoPackage {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="401"/>
+        <location filename="../plugin.py" line="477"/>
         <source>Échec lors de la copie de la table {}</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="467"/>
+        <location filename="../plugin.py" line="543"/>
         <source>Choisir un répertoire contenant des fichiers S57</source>
         <translation>Select a directory containing S57 files</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="477"/>
+        <location filename="../plugin.py" line="553"/>
         <source>Choisir un répertoire</source>
         <translation>Select a directory</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="488"/>
+        <location filename="../plugin.py" line="564"/>
         <source>Démarrage de l&apos;import…</source>
         <translation>Starting import...</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="507"/>
+        <location filename="../plugin.py" line="583"/>
         <source>Import terminé.</source>
         <translation>Import complete.</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="554"/>
+        <location filename="../plugin.py" line="630"/>
         <source>Afficher couches S-57</source>
         <translation>Display S57 layers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="559"/>
+        <location filename="../plugin.py" line="635"/>
         <source>Rechercher une couche :</source>
         <translation>Search for a layer :</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="561"/>
+        <location filename="../plugin.py" line="637"/>
         <source>Tapez pour filtrer...</source>
         <translation>Type to filter...</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="568"/>
+        <location filename="../plugin.py" line="644"/>
         <source>Couches S-57</source>
         <translation>S-57 Layers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="572"/>
+        <location filename="../plugin.py" line="648"/>
         <source>Tout sélectionner</source>
         <translation>Select all</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="573"/>
+        <location filename="../plugin.py" line="649"/>
         <source>Tout désélectionner</source>
         <translation>Deselect all</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="578"/>
+        <location filename="../plugin.py" line="654"/>
         <source>Charger les couches sélectionnées</source>
         <translation>Load selected layers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="591"/>
+        <location filename="../plugin.py" line="667"/>
         <source>Profondeurs</source>
         <translation>Depths</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="600"/>
+        <location filename="../plugin.py" line="676"/>
         <source>Obstacles / constructions</source>
         <translation>Obstacles / structures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="604"/>
+        <location filename="../plugin.py" line="680"/>
         <source>Obstacles / épaves</source>
         <translation>Obstacles / wrecks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="605"/>
+        <location filename="../plugin.py" line="681"/>
         <source>Obstacles / aides à la navigation</source>
         <translation>Obstacles/Navigation aids</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="608"/>
+        <location filename="../plugin.py" line="684"/>
         <source>Terrains / terres</source>
         <translation>Land / Lands</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="609"/>
+        <location filename="../plugin.py" line="685"/>
         <source>Terrains / canaux</source>
         <translation>and / channels</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="610"/>
+        <location filename="../plugin.py" line="686"/>
         <source>Terrains / lacs</source>
         <translation>Land / Lakes</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="611"/>
+        <location filename="../plugin.py" line="687"/>
         <source>Terrains / rivières</source>
         <translation>Land / Rivers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="613"/>
+        <location filename="../plugin.py" line="689"/>
         <source>Terrains / zones bâties</source>
         <translation>Land / built-up areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="614"/>
+        <location filename="../plugin.py" line="690"/>
         <source>Terrains / points de contrôle</source>
         <translation>Land / control points</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="649"/>
+        <location filename="../plugin.py" line="725"/>
         <source>Terrains / infrastructures</source>
         <translation>Land / infrastructure</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="617"/>
+        <location filename="../plugin.py" line="693"/>
         <source>Terrains / routes</source>
         <translation>Land / Roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="621"/>
+        <location filename="../plugin.py" line="697"/>
         <source>Terrains / nature</source>
         <translation>Land / Nature</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="623"/>
+        <location filename="../plugin.py" line="699"/>
         <source>Terrains / landmarks</source>
         <translation>Land / landmarks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="627"/>
+        <location filename="../plugin.py" line="703"/>
         <source>Énergies / turbines</source>
         <translation>Energy / turbines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="628"/>
+        <location filename="../plugin.py" line="704"/>
         <source>Végétation</source>
         <translation>Vegetation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="640"/>
+        <location filename="../plugin.py" line="716"/>
         <source>Terrains / zones d’eau</source>
         <translation>Land / water areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="674"/>
+        <location filename="../plugin.py" line="750"/>
         <source>Installations maritimes</source>
         <translation>Maritime facilities</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="653"/>
+        <location filename="../plugin.py" line="729"/>
         <source>Terrains / zones protégées</source>
         <translation>Land / Protected areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="652"/>
+        <location filename="../plugin.py" line="728"/>
         <source>Terrains / zones dangereuses</source>
         <translation>Land / Dangerous areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="654"/>
+        <location filename="../plugin.py" line="730"/>
         <source>Terrains / zones glaciales</source>
         <translation>Land / Glacial terrain</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="657"/>
+        <location filename="../plugin.py" line="733"/>
         <source>Terrains / infrastructure</source>
         <translation>Land / infrastructure</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="661"/>
+        <location filename="../plugin.py" line="737"/>
         <source>Zones de pêche</source>
         <translation>Fishing areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="662"/>
+        <location filename="../plugin.py" line="738"/>
         <source>Zones de ferry</source>
         <translation>Ferry areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="663"/>
+        <location filename="../plugin.py" line="739"/>
         <source>Voies navigables</source>
         <translation>Waterways</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="664"/>
+        <location filename="../plugin.py" line="740"/>
         <source>Zones d’exercice</source>
         <translation>Practice areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="671"/>
+        <location filename="../plugin.py" line="747"/>
         <source>Installations aériennes</source>
         <translation>Overhead installations</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="677"/>
+        <location filename="../plugin.py" line="753"/>
         <source>Lignes / rapides</source>
         <translation>Lines / rapids</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="678"/>
+        <location filename="../plugin.py" line="754"/>
         <source>Lignes / installations</source>
         <translation>Lignes / installations</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="721"/>
+        <location filename="../plugin.py" line="797"/>
         <source>Lignes / hydrographie</source>
         <translation>Lines / hydrography</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="680"/>
+        <location filename="../plugin.py" line="756"/>
         <source>Lignes / points remarquables</source>
         <translation>Lines / Notable points</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="681"/>
+        <location filename="../plugin.py" line="757"/>
         <source>Lignes / ferry</source>
         <translation>Lines / ferry</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="704"/>
+        <location filename="../plugin.py" line="780"/>
         <source>Lignes / câbles</source>
         <translation>Liges / cables</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="718"/>
+        <location filename="../plugin.py" line="794"/>
         <source>Lignes / canaux</source>
         <translation>Lines / canals</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="685"/>
+        <location filename="../plugin.py" line="761"/>
         <source>Lignes / profondeurs</source>
         <translation>Lines / Depth</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="686"/>
+        <location filename="../plugin.py" line="762"/>
         <source>Lignes / terres</source>
         <translation>Lines / Land</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="687"/>
+        <location filename="../plugin.py" line="763"/>
         <source>Lignes / rivières</source>
         <translation>Lines / Rivers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="724"/>
+        <location filename="../plugin.py" line="800"/>
         <source>Lignes / infrastructures</source>
         <translation>Lines / infrastructures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="717"/>
+        <location filename="../plugin.py" line="793"/>
         <source>Lignes / pipelines</source>
         <translation>Lines / pipelines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="716"/>
+        <location filename="../plugin.py" line="792"/>
         <source>Lignes / navigation</source>
         <translation>Lines / navigation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="715"/>
+        <location filename="../plugin.py" line="791"/>
         <source>Lignes / routes</source>
         <translation>Lines / Roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="693"/>
+        <location filename="../plugin.py" line="769"/>
         <source>Lignes / ponts</source>
         <translation>Lines / Bridges</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="695"/>
+        <location filename="../plugin.py" line="771"/>
         <source>Lignes / relief</source>
         <translation>Lines / relief</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="702"/>
+        <location filename="../plugin.py" line="778"/>
         <source>Lignes / constructions</source>
         <translation>Lines / structures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="698"/>
+        <location filename="../plugin.py" line="774"/>
         <source>Lignes / obstacles</source>
         <translation>Lines / Obstructions</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="699"/>
+        <location filename="../plugin.py" line="775"/>
         <source>Lignes / radiales</source>
         <translation>Lines / Radials</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="700"/>
+        <location filename="../plugin.py" line="776"/>
         <source>Lignes / voies ferrées</source>
         <translation>Lines / Railways</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="703"/>
+        <location filename="../plugin.py" line="779"/>
         <source>Lignes / cascades</source>
         <translation>Lines / Waterfalls</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="705"/>
+        <location filename="../plugin.py" line="781"/>
         <source>Lignes / balises</source>
         <translation>Lines / Beacons</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="706"/>
+        <location filename="../plugin.py" line="782"/>
         <source>Lignes / turbines</source>
         <translation>Lignes / turbines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="709"/>
+        <location filename="../plugin.py" line="785"/>
         <source>Lignes / lignes de sel</source>
         <translation>Lines / salt lines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="710"/>
+        <location filename="../plugin.py" line="786"/>
         <source>Lignes / digues</source>
         <translation>Lines / dikes</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="711"/>
+        <location filename="../plugin.py" line="787"/>
         <source>Lignes / végétation</source>
         <translation>Lines / Vegetation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="712"/>
+        <location filename="../plugin.py" line="788"/>
         <source>Lignes / pistes</source>
         <translation>Lines / tracks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="713"/>
+        <location filename="../plugin.py" line="789"/>
         <source>Lignes / frontières</source>
         <translation>Lines / borders</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="714"/>
+        <location filename="../plugin.py" line="790"/>
         <source>Lignes / routes locales</source>
         <translation>Lines / local roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="719"/>
+        <location filename="../plugin.py" line="795"/>
         <source>Lignes / forêts</source>
         <translation>Lines / forests</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="722"/>
+        <location filename="../plugin.py" line="798"/>
         <source>Lignes / tunnels</source>
         <translation>Lignes / tunnels</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="723"/>
+        <location filename="../plugin.py" line="799"/>
         <source>Lignes / installations maritimes</source>
         <translation>Lines / Maritime facilities</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="725"/>
+        <location filename="../plugin.py" line="801"/>
         <source>Lignes / zones de pêche</source>
         <translation>Lines / Fishing areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="782"/>
+        <location filename="../plugin.py" line="858"/>
         <source>Points / routes</source>
         <translation>Points / Roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="777"/>
+        <location filename="../plugin.py" line="853"/>
         <source>Points / zones bâties</source>
         <translation>Points / built-up areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="806"/>
+        <location filename="../plugin.py" line="882"/>
         <source>Points / installations maritimes</source>
         <translation>Points / Maritime facilities</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="795"/>
+        <location filename="../plugin.py" line="871"/>
         <source>Points / aides à la navigation</source>
         <translation>Points / navigation aids</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="793"/>
+        <location filename="../plugin.py" line="869"/>
         <source>Points / constructions</source>
         <translation>Points / constructions</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="810"/>
+        <location filename="../plugin.py" line="886"/>
         <source>Points / infrastructures</source>
         <translation>Points / infrastructures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="809"/>
+        <location filename="../plugin.py" line="885"/>
         <source>Points / signaux</source>
         <translation>Points / Signals</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="740"/>
+        <location filename="../plugin.py" line="816"/>
         <source>Points / terrains</source>
         <translation>Points / Land</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="800"/>
+        <location filename="../plugin.py" line="876"/>
         <source>Points / zones d’eau</source>
         <translation>Points / water areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="742"/>
+        <location filename="../plugin.py" line="818"/>
         <source>Points / terrains dangereux</source>
         <translation>Points / Dangerous areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="745"/>
+        <location filename="../plugin.py" line="821"/>
         <source>Points / turbines</source>
         <translation>Points / turbines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="746"/>
+        <location filename="../plugin.py" line="822"/>
         <source>Points / zones glaciales</source>
         <translation>Points / Glacial terrain</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="749"/>
+        <location filename="../plugin.py" line="825"/>
         <source>Points / obstacles</source>
         <translation>Points / Obstructions</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="750"/>
+        <location filename="../plugin.py" line="826"/>
         <source>Points / points de pilotage</source>
         <translation>Points / PIlot points</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="812"/>
+        <location filename="../plugin.py" line="888"/>
         <source>Points / balises</source>
         <translation>Points / Beacons</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="753"/>
+        <location filename="../plugin.py" line="829"/>
         <source>Points / réflecteurs</source>
         <translation>Points / reflectors</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="754"/>
+        <location filename="../plugin.py" line="830"/>
         <source>Points / signalisation sonore</source>
         <translation>Points / audible signals</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="755"/>
+        <location filename="../plugin.py" line="831"/>
         <source>Points / topographie maritime</source>
         <translation>Points / marine topography</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="759"/>
+        <location filename="../plugin.py" line="835"/>
         <source>Points / épaves</source>
         <translation>Points / wrecks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="761"/>
+        <location filename="../plugin.py" line="837"/>
         <source>Points / autres</source>
         <translation>Points / other</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="762"/>
+        <location filename="../plugin.py" line="838"/>
         <source>Points / installations aériennes</source>
         <translation>Points / Overhead installations</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="763"/>
+        <location filename="../plugin.py" line="839"/>
         <source>Points / courants</source>
         <translation>Points / currents</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="764"/>
+        <location filename="../plugin.py" line="840"/>
         <source>Points / landmarks</source>
         <translation>Points / landmarks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="765"/>
+        <location filename="../plugin.py" line="841"/>
         <source>Points / magnétiques</source>
         <translation>Points / magnetic</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="784"/>
+        <location filename="../plugin.py" line="860"/>
         <source>Points / feux</source>
         <translation>Points / Lights</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="770"/>
+        <location filename="../plugin.py" line="846"/>
         <source>Points / pêche</source>
         <translation>Points / Fishing</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="773"/>
+        <location filename="../plugin.py" line="849"/>
         <source>Points / végétation</source>
         <translation>Points / Vegetation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="774"/>
+        <location filename="../plugin.py" line="850"/>
         <source>Points / pipelines</source>
         <translation>Points / pipelines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="780"/>
+        <location filename="../plugin.py" line="856"/>
         <source>Points / centre</source>
         <translation>Points / center</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="781"/>
+        <location filename="../plugin.py" line="857"/>
         <source>Points / forêts</source>
         <translation>Points / Forests</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="786"/>
+        <location filename="../plugin.py" line="862"/>
         <source>Points / pistes</source>
         <translation>Points / tracks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="787"/>
+        <location filename="../plugin.py" line="863"/>
         <source>Points / pylônes</source>
         <translation>Points / pylons</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="791"/>
+        <location filename="../plugin.py" line="867"/>
         <source>Points / ponts</source>
         <translation>Points / Bridges</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="792"/>
+        <location filename="../plugin.py" line="868"/>
         <source>Points / sources</source>
         <translation>Points / sources</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="794"/>
+        <location filename="../plugin.py" line="870"/>
         <source>Points / routes locales</source>
         <translation>Points / Local roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="801"/>
+        <location filename="../plugin.py" line="877"/>
         <source>Points / zones protégées</source>
         <translation>Points / Protected areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="807"/>
+        <location filename="../plugin.py" line="883"/>
         <source>Points / radars</source>
         <translation>Points / radars</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="804"/>
+        <location filename="../plugin.py" line="880"/>
         <source>Points / grues</source>
         <translation>Points / Cranes</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="813"/>
+        <location filename="../plugin.py" line="889"/>
         <source>Points / cascades</source>
         <translation>Points / Waterfalls</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="818"/>
+        <location filename="../plugin.py" line="894"/>
         <source>display.py n&apos;a pas couches_a_charger</source>
         <translation>display.py does not have layers_to_load</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="829"/>
+        <location filename="../plugin.py" line="905"/>
         <source>Autres</source>
         <translation>Other</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="1226"/>
+        <location filename="../plugin.py" line="1302"/>
         <source>Aucune couche sélectionnée</source>
         <translation>No layer selected</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="934"/>
+        <location filename="../plugin.py" line="1010"/>
         <source> {} couches chargées</source>
         <translation> {} loaded layers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="1207"/>
+        <location filename="../plugin.py" line="1283"/>
         <source>Filtrage effectué : purpose = {}</source>
         <translation>Filtering performed: purpose = {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="1220"/>
+        <location filename="../plugin.py" line="1296"/>
         <source>❌ Échelle maximale invalide</source>
         <translation>❌ Maximum scale invalid</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="41"/>
+        <location filename="../plugin.py" line="60"/>
         <source>Options S57</source>
         <translation>S57 Options</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="44"/>
+        <location filename="../plugin.py" line="65"/>
         <source>Importer S57</source>
         <translation>S57 import</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="47"/>
+        <location filename="../plugin.py" line="68"/>
         <source>Afficher couches S57</source>
         <translation>Display S57 layers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="53"/>
+        <location filename="../plugin.py" line="75"/>
         <source>Outils ENC</source>
         <translation>ENC Tools</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="163"/>
+        <location filename="../plugin.py" line="188"/>
         <source>Mode GeoPackage configuré avec succès.
  Les GeoPackages nécessaires ont été vérifiés/créés.</source>
         <translation>GeoPackage mode successfully configured.
  The necessary GeoPackages have been verified/created.</translation>
+    </message>
+    <message>
+        <location filename="../plugin.py" line="80"/>
+        <source>NOAA ENC Manager</source>
+        <translation>NOAA ENC Manager</translation>
     </message>
 </context>
 <context>

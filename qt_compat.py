@@ -4,6 +4,14 @@
 # ---------------------------------------------------------
 
 from qgis.PyQt.QtCore import Qt, QCoreApplication
+__all__ = [
+    "Orientation",
+    "AlignmentFlag",
+    "CheckState",
+    "CursorShape",
+    "WindowType",
+    "tr",
+]
 
 # --- Orientation ---
 if hasattr(Qt, "Orientation"):  # Qt6
@@ -58,6 +66,6 @@ else:
     WindowType = _WindowType
 
 # --- Méthode d'internationalisation ---
-def tr(text):
-    """Compatible PyQt5 / PyQt6 translation function."""
-    return QCoreApplication.translate("S57Manager", text)
+def tr(context: str, text: str):
+    return QCoreApplication.translate(context, text)
+

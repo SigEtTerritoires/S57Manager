@@ -27,7 +27,9 @@ from qgis.core import QgsProject, QgsMapLayerType
 from qgis.PyQt.QtCore import QTranslator
 from qgis.PyQt.QtCore import  QCoreApplication, QLocale
 from qgis.PyQt.QtGui import QIcon
-
+from qgis.PyQt.QtWidgets import QAction
+from .gui.noaa_dialog import NoaaDialog
+from .logic.noaa.catalog import NoaaEncCatalog
 
 
 class S57ManagerPlugin:
@@ -69,16 +71,24 @@ class S57ManagerPlugin:
         self.iface.addPluginToMenu('S57 Manager', self.options_action)
         self.iface.addPluginToMenu('S57 Manager', self.import_action)
         self.iface.addPluginToMenu('S57 Manager', self.display_action)
-        icon4 = QIcon(os.path.join(self.plugin_dir, "icons/display.png"))        
+        icon4 = QIcon(os.path.join(self.plugin_dir, "icons/outils.png"))        
         self.action_outils = QAction(icon4,self.tr("Outils ENC"), self.iface.mainWindow())
         self.action_outils.triggered.connect(self.open_outils_dialog)
         self.iface.addPluginToMenu("&S57 Manager", self.action_outils)
+        # --- NOAA ENC ---
+        icon5 = QIcon(os.path.join(self.plugin_dir, "icons/noaa.png"))
+        self.noaa_action = QAction(icon5,
+                                   self.tr("NOAA ENC Manager"), self.iface.mainWindow())
+        self.iface.addPluginToMenu("&S57 Manager", self.noaa_action)
+        self.noaa_action.triggered.connect(self.open_noaa_dialog)
 
     def unload(self):
         self.iface.removePluginMenu('S57 Manager', self.options_action)
         self.iface.removePluginMenu('S57 Manager', self.import_action)
         self.iface.removePluginMenu('S57 Manager', self.display_action)
         self.iface.removePluginMenu('S57 Manager', self.action_outils)
+        self.iface.removePluginMenu("&S57 Manager", self.noaa_action)
+
 
     def open_options(self):
         """Ouvre le dialogue Options S57 avec test de connexion PostGIS"""
@@ -182,7 +192,7 @@ class S57ManagerPlugin:
  
 
             else:
-                self.settings.set_storage_mode('postgis')
+                self.settings.set_storage_mode("postgis")
                 selected_name = dialog.comboPgConn.currentText()
                 conn_string = get_postgis_conn_string(selected_name)
                 if not conn_string:
@@ -198,6 +208,7 @@ class S57ManagerPlugin:
 
                 # Connexion OK, on sauvegarde et crée les schémas
                 self.settings.set_postgis_conn(conn_string)
+                
                 try:
                     self.db_manager.ensure_postgis_schemas()
                 except Exception as e:
@@ -1306,5 +1317,14 @@ class S57ManagerPlugin:
 
         # 🔄 Rafraîchissement du canvas pour voir les modifications
         self.iface.mapCanvas().refresh()
+    def open_noaa_dialog(self):
+        dlg = NoaaDialog(
+            parent=self.iface.mainWindow(),
+            settings=self.settings,
+            db_manager=self.db_manager,
+        )
+        dlg.show()
+
+
 
 
