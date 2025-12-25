@@ -9,7 +9,8 @@ Il permet notamment :
 * le filtrage des couches par *purpose* (vue d’ensemble, générale, côtière, etc.) ;
 * la gestion d’échelles d’affichage par lots ;
 * divers outils ENC regroupés dans une interface unique ;
-* la prise en charge du **multilingue (FR/EN)**.
+* l’accès direct au catalogue officiel NOAA ENC et l’import ciblé des cellules;
+* la prise en charge du **multilingue (FR/EN/ES/PT)**.
 
 ---
 
@@ -28,14 +29,18 @@ Avec l'option geopackage, les tables sont stockées dans un geopackage nommé "e
 ### 🔹 Options S-57
 
 * Choix du mode de stockage (GeoPackage, dossier S-57, etc.).
-* Chemins de données.
-* Options avancées.
+* Définition des chemins de données.
+* Options avancées de gestion.
+* Installation automatique des symboles SVG ENC.
 
 ![Options du plugin](resources/dialogsettings.png)
 
-Si vous voulez utiliser une base Postgis, la connexion dans QGis doit être active. Il est conseillé d'utiliser une base vide car le plugin modifie public.layerstyle et crée plusieurs schémas de travail.
-Si vous voulez utiliser du geopackage, vous devrez simplement indiquer le répertoire à utiliser. Le plugin crée si nécessaire les gpkg utilisés.
-Le bouton **Installer les symboles svg** charge les fichiers nécessaires à la symbologie par défaut dans le profil de l'utilisateur, pas dans le répertoire svg propre de QGis.
+### Remarques importantes :
+
+* Pour PostGIS, la connexion doit être active dans QGIS.
+Il est conseillé d’utiliser une base vide, car le plugin modifie public.layerstyle et crée plusieurs schémas de travail.
+* Pour GeoPackage, il suffit d’indiquer un répertoire ; le plugin crée automatiquement les fichiers nécessaires.
+* Le bouton Installer les symboles SVG installe les symboles dans le profil utilisateur QGIS (et non dans le dossier SVG global).s.
 
 ### 🔹 Import S-57
 
@@ -45,8 +50,9 @@ Le plugin balaye tout le répertoire et sous-répertoires. Il charge TOUS les fi
 
 ### 🔹 Affichage structuré des couches
 
-* Création d’un groupe QGIS contenant les couches classées par thèmes.
-* Styles automatiques.
+* Création automatique d’un groupe QGIS dédié aux couches ENC.
+* Classement par thèmes.
+* Styles par défaut adaptés aux données marines.
 * Activation/désactivation rapide.
 
 ![Affichage des couches](resources/dialogdisplay.png)
@@ -56,17 +62,39 @@ L'ordre de chargement est prévu pour assurer la visibilité de toutes les couch
 ### 🔹 Outils ENC
 
 Accessible via **Menu → S57 Manager → Outils ENC**
-Outils disponibles :
+Fonctionnalités :
 
-* Filtrer les couches par *purpose* (1 à 6).
-* Retirer tous les filtres.
-* Définir **échelle minimale** et **échelle maximale** pour plusieurs couches sélectionnées.
+* Filtrage des couches par purpose (1 à 6).
+* Suppression de tous les filtres.
+* Définition d’échelles minimale et maximale pour plusieurs couches sélectionnées.
 * Rafraîchissement automatique de la symbologie et du canevas.
 
 ![Outils](resources/dialogtools.png)
 
 ### Affichage final des couches
 ![Affichage des couches](resources/display2.jpg)
+
+### Module NOAA ENC (
+
+S57Manager intègre désormais un module dédié au catalogue officiel NOAA ENC, permettant de rechercher et d’importer facilement des cellules ENC directement depuis QGIS.
+
+Fonctionnalités du module NOAA
+
+![Accès au catalogue NOAA](resources/noaacatalog.png)
+
+* Chargement automatique du catalogue NOAA ENC (XML officiel).
+* Liste complète des cellules ENC disponibles.
+* Filtrage dynamique :
+   *par purpose (niveaux 1 à 6),
+   *par échelle,
+   *par emprise du canevas QGIS.
+* Import d’une cellule NOAA sélectionnée (téléchargement + intégration S-57).
+* Gestion correcte des systèmes de coordonnées :
+   *emprises NOAA en EPSG:4326,
+   *compatibilité avec le CRS du canevas QGIS.
+* Interface intégrée au plugin (dialogue dédié).
+* Support du multilingue.
+
 
 ### 🔹 Traduction (FR/EN/ES/PT)
 
@@ -123,7 +151,15 @@ S57Manager/
  │    ├── importer.py
  │    ├── display.py
  │    ├── db_manager.py
- │    └── settings.py
+ │    ├── settings.py
+ │    └── noaa
+ │         ├── catalog.py
+ │         ├── downloader.py
+ │         ├── importer.py
+ │         ├── models.py
+ │         ├── noaa_worker.py
+ │         ├── updater.py
+ │         └── validator.py
  ├── gui/
  │    ├── display_dialog.ui
  │    ├── import_dialog.ui
