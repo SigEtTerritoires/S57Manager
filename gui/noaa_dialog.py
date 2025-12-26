@@ -2,17 +2,18 @@ from pathlib import Path
 import tempfile
 
 from qgis.PyQt import QtWidgets, QtCore
-from qgis.PyQt.QtCore import QThread, QCoreApplication
+from qgis.PyQt.QtCore import QThread, QCoreApplication,Qt
 
 from ..logic.noaa.catalog import NoaaEncCatalog, NoaaEncCell
 from ..logic.noaa.noaa_worker import NoaaWorker
 from ..logic.noaa.updater import NoaaUpdater
+from ..logic.display import S57Display
 from qgis.core import QgsMessageLog
 from qgis.PyQt.QtWidgets import (
         QVBoxLayout, QHBoxLayout, QGridLayout,
         QGroupBox, QCheckBox, QLabel, QPushButton,
         QSpinBox, QTableWidget, QTableWidgetItem,
-        QTextEdit, QHeaderView
+        QTextEdit, QHeaderView,  QAbstractItemView
     )
 from qgis.utils import iface
 
@@ -113,8 +114,8 @@ class NoaaDialog(QtWidgets.QDialog):
         except AttributeError:
             resize_mode = QHeaderView.Stretch              # Qt5
         self.table.horizontalHeader().setSectionResizeMode(resize_mode)
-        self.table.setSelectionBehavior(QTableWidget.SelectRows)
-        self.table.setSelectionMode(QTableWidget.SingleSelection)
+        self.table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.table.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
 
         main_layout.addWidget(self.table)
 
@@ -141,6 +142,11 @@ class NoaaDialog(QtWidgets.QDialog):
         buttons_layout.addWidget(self.load_catalog_btn)
         buttons_layout.addWidget(self.btn_import)
         buttons_layout.addWidget(self.btn_close)
+        self.chk_add_to_map = QCheckBox(
+            self.tr("Charger la carte ENC après l’import")
+        )
+        self.chk_add_to_map.setChecked(True)
+        main_layout.addWidget(self.chk_add_to_map)
 
         main_layout.addLayout(buttons_layout)
 
@@ -148,8 +154,8 @@ class NoaaDialog(QtWidgets.QDialog):
         self.setWindowTitle(self.tr("NOAA ENC – Catalogue"))
         self.resize(900, 650)
 
-        self.chk_extent.stateChanged.connect(self.refresh_cells)
-        self.chk_canvas_scale.stateChanged.connect(self.refresh_cells)
+        
+        
         self.spin_scale_min.valueChanged.connect(self.refresh_cells)
         self.spin_scale_max.valueChanged.connect(self.refresh_cells)
         self.chk_extent.toggled.connect(self.refresh_cells)
@@ -158,7 +164,8 @@ class NoaaDialog(QtWidgets.QDialog):
         
         
         for chk in self.chk_purpose.values():
-            chk.stateChanged.connect(self.refresh_cells)
+            chk.toggled.connect(self.refresh_cells)
+
 
         selected_purposes = [
             pid for pid, chk in self.chk_purpose.items() if chk.isChecked()
@@ -241,11 +248,11 @@ class NoaaDialog(QtWidgets.QDialog):
         # -----------------------------------
         # 3️⃣ Log DEBUG (optionnel mais utile)
         # -----------------------------------
-#        self.log_message(self.tr("Démarrage du traitement de la cellule {}").format(cell_id))
-#        self.log_message(f"DEBUG id = {cell.id}")
-#        self.log_message(f"DEBUG name = {cell.name}")
-#        self.log_message(f"DEBUG url = {cell.zip_url}")
-#        self.log_message(f"DEBUG scale = {cell.scale}")
+        self.log_message(self.tr("Démarrage du traitement de la cellule {}").format(cell.id))
+        self.log_message(f"DEBUG id = {cell.id}")
+        self.log_message(f"DEBUG name = {cell.name}")
+        self.log_message(f"DEBUG url = {cell.zip_url}")
+        self.log_message(f"DEBUG scale = {cell.scale}")
 
         # -----------------------------------
         # 4️⃣ Désactivation bouton
@@ -280,13 +287,20 @@ class NoaaDialog(QtWidgets.QDialog):
     # Callbacks worker
     # ------------------------------------------------------------------
 
-    def _on_worker_finished(self, success: bool, message: str):
+    def _on_worker_finished(self, success: bool, message: str, cell_id: str):
         if success:
-            self.log_message(self.tr("✔ {message}"))
+            self.log_message(self.tr("✔ {}").format(message))
+
+            if self.chk_add_to_map.isChecked() and cell_id:
+                self.log_message(self.tr("⏳ Patientez, chargement des couches dans le projet.."))
+                self._load_enc_cell(cell_id)
+                self.log_message(self.tr("✔ Traitement terminé"))
+
         else:
-            self.log_message(self.tr("❌ {message}"))
+            self.log_message(self.tr("❌ {}").format(message))
 
         self.btn_import.setEnabled(True)
+
 
     # ------------------------------------------------------------------
     # Log helper
@@ -389,7 +403,7 @@ class NoaaDialog(QtWidgets.QDialog):
             self.table.insertRow(row)
 
             item_id = QTableWidgetItem(cell.id)
-            item_id.setData(QtCore.Qt.UserRole, cell)
+            item_id.setData(Qt.ItemDataRole.UserRole, cell)
 
             self.table.setItem(row, 0, item_id)
             self.table.setItem(row, 1, QTableWidgetItem(cell.name))
@@ -405,3 +419,10 @@ class NoaaDialog(QtWidgets.QDialog):
     def _cell_extent(self, cell):
         minx, miny, maxx, maxy = cell.bbox
         return QgsRectangle(minx, miny, maxx, maxy)
+    def _load_enc_cell(self, cell_id: str):
+        display = S57Display(
+            settings=self.settings,
+            db_manager=self.db_manager,
+            iface=self.iface,
+        )
+        display.load_enc_cell(cell_id)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="fr_FR">
 <context>
     <name>DisplayDialog</name>
     <message>
@@ -60,128 +60,148 @@
 <context>
     <name>NoaaDialog</name>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="48"/>
+        <location filename="../gui/noaa_dialog.py" line="49"/>
         <source>Filtres NOAA ENC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="52"/>
-        <source>Limiter à l’emprise de la carte</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="53"/>
+        <source>Limiter à l’emprise de la carte</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="54"/>
         <source>Adapter à l’échelle courante</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="59"/>
+        <location filename="../gui/noaa_dialog.py" line="60"/>
         <source>Échelle ENC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="86"/>
-        <source>Overview</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="87"/>
-        <source>General</source>
-        <translation type="unfinished"></translation>
+        <source>Overview</source>
+        <translation>Aperçu</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="88"/>
-        <source>Coastal</source>
-        <translation type="unfinished"></translation>
+        <source>General</source>
+        <translation>Général</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="89"/>
-        <source>Approach</source>
-        <translation type="unfinished"></translation>
+        <source>Coastal</source>
+        <translation>Côtière</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="90"/>
-        <source>Harbour</source>
-        <translation type="unfinished"></translation>
+        <source>Approach</source>
+        <translation>Approche</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="91"/>
+        <source>Harbour</source>
+        <translation>Portuaire</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="92"/>
         <source>Berthing</source>
-        <translation type="unfinished"></translation>
+        <translation>Mouillage</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <location filename="../gui/noaa_dialog.py" line="111"/>
         <source>Nom</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <location filename="../gui/noaa_dialog.py" line="111"/>
         <source>Purpose</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilisation</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <location filename="../gui/noaa_dialog.py" line="111"/>
         <source>Échelle</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="136"/>
-        <source>Importer la cellule sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="137"/>
-        <source>Fermer</source>
-        <translation type="unfinished"></translation>
+        <source>Importer la cellule sélectionnée</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="138"/>
-        <source>Télécharger le catalogue NOAA</source>
-        <translation type="unfinished"></translation>
+        <source>Fermer</source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="148"/>
+        <location filename="../gui/noaa_dialog.py" line="139"/>
+        <source>Télécharger le catalogue NOAA</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="154"/>
         <source>NOAA ENC – Catalogue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="200"/>
+        <location filename="../gui/noaa_dialog.py" line="207"/>
         <source>Chargement du catalogue NOAA…</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="206"/>
+        <location filename="../gui/noaa_dialog.py" line="213"/>
         <source>❌ Erreur catalogue : {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="211"/>
+        <location filename="../gui/noaa_dialog.py" line="218"/>
         <source>✔ {} cellules chargées</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="229"/>
+        <location filename="../gui/noaa_dialog.py" line="236"/>
         <source>⚠ Aucune cellule sélectionnée</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="238"/>
+        <location filename="../gui/noaa_dialog.py" line="245"/>
         <source>❌ Erreur interne : cellule invalide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="285"/>
-        <source>✔ {message}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="287"/>
-        <source>❌ {message}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="401"/>
+        <location filename="../gui/noaa_dialog.py" line="415"/>
         <source>🔎 {} cellules affichées après filtrage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="145"/>
+        <source>Charger la carte ENC après l’import</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="251"/>
+        <source>Démarrage du traitement de la cellule {}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="292"/>
+        <source>✔ {}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="295"/>
+        <source>⏳ Patientez, chargement des couches dans le projet..</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="297"/>
+        <source>✔ Traitement terminé</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="300"/>
+        <source>❌ {}</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -305,7 +325,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../logic/noaa/noaa_worker.py" line="62"/>
+        <location filename="../logic/noaa/noaa_worker.py" line="63"/>
         <source>Erreur : {}</source>
         <translation type="unfinished"></translation>
     </message>
@@ -362,9 +382,6 @@
         <source>La symbologie par défaut a été installée dans la base PostGIS.</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>OutilsDialog</name>
 </context>
 <context>
     <name>ProgressDialog</name>

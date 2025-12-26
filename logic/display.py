@@ -1,6 +1,6 @@
 from qgis.core import QgsProject, QgsVectorLayer, QgsDataSourceUri, QgsMapLayerStyle
-from qgis.core import QgsMessageLog
 
+from qgis.core import QgsMessageLog, Qgis
 class S57Display:
     def __init__(self, settings,db_manager, iface):
         self.db_manager = db_manager
@@ -342,5 +342,79 @@ class S57Display:
             self.iface.mapCanvas().refreshAllLayers()
             return
 
+    def load_enc_cell(self, cell_id: str):
+        enc_chart = f"{cell_id}.000"
+
+        project = QgsProject.instance()
+        root = project.layerTreeRoot()
+        group = root.insertGroup(0, f"ENC – {cell_id}")
+        group.setExpanded(False)
+
+        for table_name, _scale in reversed(self.couches_a_charger):
+            layer = self._create_layer(table_name, enc_chart)
+
+            if not layer:
+                continue
+
+            if not layer.isValid():
+                continue
+
+            count = layer.featureCount()
+
+
+            if count == 0:
+                continue
+
+
+            project.addMapLayer(layer, False)
+            group.addLayer(layer)
+    def _create_layer(self, table_name: str, enc_chart: str):
+            
+
+#        QgsMessageLog.logMessage(f"[DEBUG] storage_mode = {self.settings.storage_mode()}","S57Manager")
+
+        if self.settings.storage_mode() == "postgis":
+            return self._create_postgis_layer(table_name, enc_chart)
+        else:
+            return self._create_gpkg_layer(table_name, enc_chart)
+    def _create_postgis_layer(self, table_name, enc_chart):
+        uri = QgsDataSourceUri()
+        # Paramètres PG (exactement comme dans l'import)
+        conninfo = self.db_manager.settings.postgis_conn()
+        db_params = {}
+        for part in conninfo.split():
+            if "=" in part:
+                k, v = part.split("=", 1)
+                db_params[k.strip()] = v.strip()
+
+        host = db_params.get("host", "localhost")
+        port = db_params.get("port", "5432")
+        dbname = db_params.get("dbname", "")
+        user = db_params.get("user", "")
+        pwd = db_params.get("password", "")
+        schema = "enc"
+        uri.setConnection(host, port, dbname, user, pwd)
+        
+        uri.setDataSource(
+            schema,
+            table_name,
+            "wkb_geometry",
+            f"enc_chart = '{enc_chart}'",
+        )
+
+        layer = QgsVectorLayer(uri.uri(), table_name, "postgres")
+        return layer
+    def _create_gpkg_layer(self, table_name, enc_chart):
+        uri = f"{self.settings.gpkg_path}|layername={table_name}"
+        layer = QgsVectorLayer(uri, table_name, "ogr")
+
+        if layer.isValid():
+            layer.setSubsetString(f"enc_chart = '{enc_chart}'")
+            style = QgsMapLayerStyle()
+            style.readFromFile(self.settings.get_style_path(table_name))
+            layer.importNamedStyle(style)
+            layer.triggerRepaint()
+
+        return layer
 
         

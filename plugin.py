@@ -208,7 +208,7 @@ class S57ManagerPlugin:
 
                 # Connexion OK, on sauvegarde et crée les schémas
                 self.settings.set_postgis_conn(conn_string)
-                
+                self.settings.set_storage_mode("postgis")
                 try:
                     self.db_manager.ensure_postgis_schemas()
                 except Exception as e:

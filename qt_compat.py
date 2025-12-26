@@ -12,7 +12,7 @@ __all__ = [
     "WindowType",
     "tr",
 ]
-
+USER_ROLE = Qt.ItemDataRole.UserRole
 # --- Orientation ---
 if hasattr(Qt, "Orientation"):  # Qt6
     Orientation = Qt.Orientation

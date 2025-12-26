@@ -53,136 +53,166 @@
     </message>
     <message>
         <location filename="../gui/import_dialog.ui" line="30"/>
-        <source>Démarrer l'import</source>
+        <source>Démarrer l&apos;import</source>
         <translation>Iniciar la importación</translation>
     </message>
 </context>
 <context>
     <name>NoaaDialog</name>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="48"/>
+        <location filename="../gui/noaa_dialog.py" line="49"/>
         <source>Filtres NOAA ENC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="52"/>
-        <source>Limiter à l’emprise de la carte</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtros NOAA ENC</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="53"/>
+        <source>Limiter à l’emprise de la carte</source>
+        <translation>Limitar al área cubierta por el mapa</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="54"/>
         <source>Adapter à l’échelle courante</source>
-        <translation type="unfinished"></translation>
+        <translation>Adaptar a la escala actual</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="59"/>
+        <location filename="../gui/noaa_dialog.py" line="60"/>
         <source>Échelle ENC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="86"/>
-        <source>Overview</source>
-        <translation type="unfinished"></translation>
+        <translation>Escala ENC</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="87"/>
-        <source>General</source>
-        <translation type="unfinished"></translation>
+        <source>Overview</source>
+        <translation>Descripción general</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="88"/>
-        <source>Coastal</source>
-        <translation type="unfinished"></translation>
+        <source>General</source>
+        <translation>General</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="89"/>
-        <source>Approach</source>
-        <translation type="unfinished"></translation>
+        <source>Coastal</source>
+        <translation>Costera</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="90"/>
-        <source>Harbour</source>
-        <translation type="unfinished"></translation>
+        <source>Approach</source>
+        <translation>Cercanías</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="91"/>
+        <source>Harbour</source>
+        <translation>Puerto</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="92"/>
         <source>Berthing</source>
-        <translation type="unfinished"></translation>
+        <translation>Amarre</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <location filename="../gui/noaa_dialog.py" line="111"/>
         <source>Nom</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <location filename="../gui/noaa_dialog.py" line="111"/>
         <source>Purpose</source>
-        <translation type="unfinished"></translation>
+        <translation>Propósito</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="110"/>
+        <location filename="../gui/noaa_dialog.py" line="111"/>
         <source>Échelle</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui/noaa_dialog.py" line="136"/>
-        <source>Importer la cellule sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Escala</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="137"/>
-        <source>Fermer</source>
-        <translation type="unfinished"></translation>
+        <source>Importer la cellule sélectionnée</source>
+        <translation>Importar la celda seleccionada</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="138"/>
+        <source>Fermer</source>
+        <translation>Cerrar</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="139"/>
         <source>Télécharger le catalogue NOAA</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargar el catálogo NOAA</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="148"/>
+        <location filename="../gui/noaa_dialog.py" line="154"/>
         <source>NOAA ENC – Catalogue</source>
-        <translation type="unfinished"></translation>
+        <translation>NOAA ENC – Catálogo</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="200"/>
+        <location filename="../gui/noaa_dialog.py" line="207"/>
         <source>Chargement du catalogue NOAA…</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargando el catálogo NOAA...</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="206"/>
+        <location filename="../gui/noaa_dialog.py" line="213"/>
         <source>❌ Erreur catalogue : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>❌ Error en el catálogo: {}</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="211"/>
+        <location filename="../gui/noaa_dialog.py" line="218"/>
         <source>✔ {} cellules chargées</source>
-        <translation type="unfinished"></translation>
+        <translation>✔ {} celdas cargadas</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="229"/>
+        <location filename="../gui/noaa_dialog.py" line="236"/>
         <source>⚠ Aucune cellule sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>⚠ No hay celdas seleccionadas</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="238"/>
+        <location filename="../gui/noaa_dialog.py" line="245"/>
         <source>❌ Erreur interne : cellule invalide</source>
-        <translation type="unfinished"></translation>
+        <translation>❌ Error interno: celda no válida</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="285"/>
         <source>✔ {message}</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">✔ {message}</translation>
     </message>
     <message>
         <location filename="../gui/noaa_dialog.py" line="287"/>
         <source>❌ {message}</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">❌ {message}</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="401"/>
+        <location filename="../gui/noaa_dialog.py" line="415"/>
         <source>🔎 {} cellules affichées après filtrage</source>
-        <translation type="unfinished"></translation>
+        <translation>🔎 {} celdas mostradas después del filtrado</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="145"/>
+        <source>Charger la carte ENC après l’import</source>
+        <translation>Cargar el mapa ENC después de importarlo</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="251"/>
+        <source>Démarrage du traitement de la cellule {}</source>
+        <translation>Inicio del tratamiento de la celda {}</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="292"/>
+        <source>✔ {}</source>
+        <translation>✔ {}</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="295"/>
+        <source>⏳ Patientez, chargement des couches dans le projet..</source>
+        <translation>⏳ Espere, cargando capas en el proyecto..</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="297"/>
+        <source>✔ Traitement terminé</source>
+        <translation>Procesamiento terminado</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="300"/>
+        <source>❌ {}</source>
+        <translation>❌ {}</translation>
     </message>
 </context>
 <context>
@@ -190,20 +220,20 @@
     <message>
         <location filename="../logic/noaa/catalog.py" line="52"/>
         <source>Impossible de charger le catalogue NOAA : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>No se puede cargar el catálogo NOAA: {}</translation>
     </message>
     <message>
         <location filename="../logic/noaa/catalog.py" line="89"/>
         <source>Catalogue NOAA chargé mais aucune cellule détectée</source>
-        <translation type="unfinished"></translation>
+        <translation>Catálogo NOAA cargado, pero no se detectan celdas</translation>
     </message>
 </context>
 <context>
     <name>NoaaEncDownloader</name>
     <message>
         <location filename="../logic/noaa/downloader.py" line="47"/>
-        <source>Cellule {} n'a pas d'URL de téléchargement.</source>
-        <translation type="unfinished"></translation>
+        <source>Cellule {} n&apos;a pas d&apos;URL de téléchargement.</source>
+        <translation>La celda {} no tiene URL de descarga.</translation>
     </message>
 </context>
 <context>
@@ -211,7 +241,7 @@
     <message>
         <location filename="../logic/noaa/importer.py" line="38"/>
         <source>Fichier S-57 introuvable après extraction : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Archivo S-57 no encontrado tras la extracción: {}</translation>
     </message>
 </context>
 <context>
@@ -219,62 +249,62 @@
     <message>
         <location filename="../logic/noaa/updater.py" line="26"/>
         <source>➡ Début mise à jour cellule {}</source>
-        <translation type="unfinished"></translation>
+        <translation>➡ Inicio de actualización de celda {}</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="32"/>
         <source>📂 Répertoire de travail : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>📂 Directorio de trabajo: {}</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="36"/>
         <source>⬇ Téléchargement de la cellule : {}...</source>
-        <translation type="unfinished"></translation>
+        <translation>⬇ Descarga de la celda: {}...</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="38"/>
         <source>✔ Téléchargé :  {}</source>
-        <translation type="unfinished"></translation>
+        <translation>✔ Descargado:  {}</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="40"/>
         <source>❌ Erreur téléchargement : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>❌ Error de descarga: {}</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="47"/>
         <source>✔ ZIP valide</source>
-        <translation type="unfinished"></translation>
+        <translation>✔ ZIP válido</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="49"/>
         <source>❌ Erreur validation : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>❌ Error de validación: {}</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="54"/>
         <source>📥 Import S-57…</source>
-        <translation type="unfinished"></translation>
+        <translation>📥 Importación S-57...</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="56"/>
         <source>✔ Import réussi</source>
-        <translation type="unfinished"></translation>
+        <translation>✔ Importación realizada correctamente</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="58"/>
         <source>❌ Erreur import : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>❌ Error de importación: {}</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="61"/>
         <source>✅ Cellule {} mise à jour avec succès</source>
-        <translation type="unfinished"></translation>
+        <translation>✅ Celda {} actualizada correctamente</translation>
     </message>
     <message>
         <location filename="../logic/noaa/updater.py" line="45"/>
         <source>🔍 Validation du ZIP…</source>
-        <translation type="unfinished"></translation>
+        <translation>🔍 Validación del ZIP...</translation>
     </message>
 </context>
 <context>
@@ -282,32 +312,32 @@
     <message>
         <location filename="../logic/noaa/noaa_worker.py" line="41"/>
         <source>Téléchargement de la cellule {}…</source>
-        <translation type="unfinished"></translation>
+        <translation>⬇ Descarga de la celda: {}...</translation>
     </message>
     <message>
         <location filename="../logic/noaa/noaa_worker.py" line="44"/>
         <source>Décompression de {}…</source>
-        <translation type="unfinished"></translation>
+        <translation>Descompresión de {}…</translation>
     </message>
     <message>
         <location filename="../logic/noaa/noaa_worker.py" line="50"/>
         <source>Import des fichiers S-57 dans QGIS…</source>
-        <translation type="unfinished"></translation>
+        <translation>Importación de archivos S-57 en QGIS...</translation>
     </message>
     <message>
         <location filename="../logic/noaa/noaa_worker.py" line="58"/>
         <source>Import de {} terminé</source>
-        <translation type="unfinished"></translation>
+        <translation>Importación de {} completada</translation>
     </message>
     <message>
         <location filename="../logic/noaa/noaa_worker.py" line="59"/>
         <source>Cellule {} importée avec succès</source>
-        <translation type="unfinished"></translation>
+        <translation>Célula {} importada con éxito</translation>
     </message>
     <message>
-        <location filename="../logic/noaa/noaa_worker.py" line="62"/>
+        <location filename="../logic/noaa/noaa_worker.py" line="63"/>
         <source>Erreur : {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Error : {}</translation>
     </message>
 </context>
 <context>
@@ -315,52 +345,52 @@
     <message>
         <location filename="../gui/options_dialog.ui" line="6"/>
         <source>Options S57</source>
-        <translation type="unfinished">Opciones S57</translation>
+        <translation>Opciones S57</translation>
     </message>
     <message>
         <location filename="../gui/options_dialog.ui" line="14"/>
         <source>Mode de stockage</source>
-        <translation type="unfinished"></translation>
+        <translation>Modo de almacenamiento</translation>
     </message>
     <message>
         <location filename="../gui/options_dialog.ui" line="21"/>
         <source>GeoPackage</source>
-        <translation type="unfinished"></translation>
+        <translation>GeoPackage</translation>
     </message>
     <message>
         <location filename="../gui/options_dialog.ui" line="35"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../gui/options_dialog.ui" line="46"/>
         <source>PostGIS (chaine PG)</source>
-        <translation type="unfinished"></translation>
+        <translation>PostGIS (cadena PG)</translation>
     </message>
     <message>
         <location filename="../gui/options_dialog.ui" line="64"/>
         <source>Installer bibliothèque de symboles svg</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalar biblioteca de símbolos svg</translation>
     </message>
     <message>
         <location filename="../gui/options_dialog.ui" line="69"/>
         <source>Installer la symbologie par défaut S57</source>
-        <translation type="unfinished"></translation>
+        <translation>Instalar la simbología predeterminada S57</translation>
     </message>
     <message>
         <location filename="../dialogs/options_dialog.py" line="91"/>
         <source>Connexion manquante</source>
-        <translation type="unfinished"></translation>
+        <translation>Conexión perdida</translation>
     </message>
     <message>
         <location filename="../dialogs/options_dialog.py" line="91"/>
         <source>Veuillez choisir une connexion PostGIS.</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccione una conexión PostGIS.</translation>
     </message>
     <message>
         <location filename="../dialogs/options_dialog.py" line="112"/>
         <source>La symbologie par défaut a été installée dans la base PostGIS.</source>
-        <translation type="unfinished"></translation>
+        <translation>La simbología predeterminada se ha instalado en la base PostGIS.</translation>
     </message>
 </context>
 <context>
@@ -405,7 +435,7 @@
     <name>S57Display</name>
     <message>
         <location filename="../logic/display.py" line="308"/>
-        <source>Aucun GeoPackage ENC.gpkg n'est défini dans les options.</source>
+        <source>Aucun GeoPackage ENC.gpkg n&apos;est défini dans les options.</source>
         <translation>No hay ningún GeoPackage ENC.gpkg definido en las opciones.</translation>
     </message>
 </context>
@@ -477,7 +507,7 @@
     </message>
     <message>
         <location filename="../logic/importer.py" line="308"/>
-        <source>❌ Impossible d'ouvrir le GeoPackage.</source>
+        <source>❌ Impossible d&apos;ouvrir le GeoPackage.</source>
         <translation>❌ No se puede abrir el GeoPackage.</translation>
     </message>
     <message>
@@ -592,12 +622,12 @@
     </message>
     <message>
         <location filename="../logic/importer.py" line="749"/>
-        <source>❌ Impossible d'ouvrir le GeoPackage {}</source>
+        <source>❌ Impossible d&apos;ouvrir le GeoPackage {}</source>
         <translation>❌ No se puede abrir el GeoPackage {}</translation>
     </message>
     <message>
         <location filename="../logic/importer.py" line="755"/>
-        <source>❌ Impossible d'ouvrir le GeoPackage de destination {}</source>
+        <source>❌ Impossible d&apos;ouvrir le GeoPackage de destination {}</source>
         <translation>❌ No se puede abrir el GeoPackage de destino {}</translation>
     </message>
     <message>
@@ -663,7 +693,7 @@
     <message>
         <location filename="../logic/importer.py" line="43"/>
         <source>Aucun fichier .000 trouvé dans {}</source>
-        <translation type="unfinished"></translation>
+        <translation>No se ha encontrado ningún archivo .000 en {}</translation>
     </message>
 </context>
 <context>
@@ -775,7 +805,7 @@
     </message>
     <message>
         <location filename="../plugin.py" line="564"/>
-        <source>Démarrage de l'import…</source>
+        <source>Démarrage de l&apos;import…</source>
         <translation>Inicio de la importación...</translation>
     </message>
     <message>
@@ -1373,7 +1403,7 @@
     <message>
         <location filename="../plugin.py" line="80"/>
         <source>NOAA ENC Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>NOAA ENC Manager</translation>
     </message>
 </context>
 <context>
@@ -1430,7 +1460,7 @@
     </message>
     <message>
         <location filename="../gui/ui_outils_dialog.ui" line="49"/>
-        <source>Définir échelles d'affichage pour les couches sélectionnées</source>
+        <source>Définir échelles d&apos;affichage pour les couches sélectionnées</source>
         <translation>Definir escalas de visualización para las capas seleccionadas</translation>
     </message>
     <message>

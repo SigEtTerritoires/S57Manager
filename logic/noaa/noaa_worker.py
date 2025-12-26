@@ -5,11 +5,11 @@ from .catalog import NoaaEncCell
 from .downloader import NoaaEncDownloader
 from .importer import NoaaEncImporter
 from ..settings import S57Settings
-
+from qgis.PyQt.QtCore import QCoreApplication
 class NoaaWorker(QObject):
     progress = pyqtSignal(str)       # messages log
     step_progress = pyqtSignal(int)  # barre de progression globale
-    finished = pyqtSignal(bool, str) # succès, message final
+    finished = pyqtSignal(bool, str,str) # succès, message final
 
     def __init__(
         self,
@@ -56,10 +56,11 @@ class NoaaWorker(QObject):
             )
 
             self.progress.emit(self.tr("Import de {} terminé").format(self.cell.id))
-            self.finished.emit(True, self.tr("Cellule {} importée avec succès").format(self.cell.id))
+            self.finished.emit(True,self.tr("Cellule {} importée avec succès").format(self.cell.id),self.cell.id)
+
 
         except Exception as e:
-            self.finished.emit(False, self.tr("Erreur : {}").format(str(e)))
+            self.finished.emit(False, self.tr("Erreur : {}").format(str(e)),"")
     def append_log(self, message: str):
         self.progress.emit(message)
 
