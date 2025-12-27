@@ -60,112 +60,112 @@
 <context>
     <name>NoaaDialog</name>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="49"/>
+        <location filename="../gui/noaa_dialog.py" line="59"/>
         <source>Filtres NOAA ENC</source>
         <translation>NOAA ENC filters</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="53"/>
+        <location filename="../gui/noaa_dialog.py" line="63"/>
         <source>Limiter à l’emprise de la carte</source>
         <translation>Limit to the canvas extent</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="54"/>
+        <location filename="../gui/noaa_dialog.py" line="64"/>
         <source>Adapter à l’échelle courante</source>
         <translation>Adjust to the current scale</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="60"/>
+        <location filename="../gui/noaa_dialog.py" line="70"/>
         <source>Échelle ENC</source>
         <translation>ENC scale</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="87"/>
+        <location filename="../gui/noaa_dialog.py" line="97"/>
         <source>Overview</source>
         <translation>Overview</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="88"/>
+        <location filename="../gui/noaa_dialog.py" line="98"/>
         <source>General</source>
         <translation>General</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="89"/>
+        <location filename="../gui/noaa_dialog.py" line="99"/>
         <source>Coastal</source>
         <translation>Coastal</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="90"/>
+        <location filename="../gui/noaa_dialog.py" line="100"/>
         <source>Approach</source>
         <translation>Approach</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="91"/>
+        <location filename="../gui/noaa_dialog.py" line="101"/>
         <source>Harbour</source>
         <translation>Harbour</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="92"/>
+        <location filename="../gui/noaa_dialog.py" line="102"/>
         <source>Berthing</source>
         <translation>Berthing</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="111"/>
+        <location filename="../gui/noaa_dialog.py" line="121"/>
         <source>Nom</source>
         <translation>Name</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="111"/>
+        <location filename="../gui/noaa_dialog.py" line="121"/>
         <source>Purpose</source>
         <translation>Purpose</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="111"/>
+        <location filename="../gui/noaa_dialog.py" line="121"/>
         <source>Échelle</source>
         <translation>Scale</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="137"/>
+        <location filename="../gui/noaa_dialog.py" line="151"/>
         <source>Importer la cellule sélectionnée</source>
         <translation>Import the selected cell</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="138"/>
+        <location filename="../gui/noaa_dialog.py" line="152"/>
         <source>Fermer</source>
         <translation>Close</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="139"/>
+        <location filename="../gui/noaa_dialog.py" line="153"/>
         <source>Télécharger le catalogue NOAA</source>
         <translation>Download the NOAA catalog</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="154"/>
+        <location filename="../gui/noaa_dialog.py" line="168"/>
         <source>NOAA ENC – Catalogue</source>
         <translation>NOAA ENC – Catalog</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="207"/>
+        <location filename="../gui/noaa_dialog.py" line="221"/>
         <source>Chargement du catalogue NOAA…</source>
         <translation>Loading NOAA catalog...</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="213"/>
+        <location filename="../gui/noaa_dialog.py" line="227"/>
         <source>❌ Erreur catalogue : {}</source>
         <translation>❌ Catalog error: {}</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="218"/>
+        <location filename="../gui/noaa_dialog.py" line="232"/>
         <source>✔ {} cellules chargées</source>
         <translation>✔ {} cells loaded</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="236"/>
+        <location filename="../gui/noaa_dialog.py" line="250"/>
         <source>⚠ Aucune cellule sélectionnée</source>
         <translation>⚠ No cells selected</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="245"/>
+        <location filename="../gui/noaa_dialog.py" line="259"/>
         <source>❌ Erreur interne : cellule invalide</source>
         <translation>❌ Internal error: invalid cell</translation>
     </message>
@@ -180,39 +180,59 @@
         <translation type="obsolete">❌ {message}</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="415"/>
+        <location filename="../gui/noaa_dialog.py" line="429"/>
         <source>🔎 {} cellules affichées après filtrage</source>
         <translation>🔎 {} cells displayed after filtering</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="145"/>
+        <location filename="../gui/noaa_dialog.py" line="159"/>
         <source>Charger la carte ENC après l’import</source>
         <translation>Load the ENC chart after importing</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="251"/>
+        <location filename="../gui/noaa_dialog.py" line="265"/>
         <source>Démarrage du traitement de la cellule {}</source>
         <translation>Start processing cell {}</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="292"/>
+        <location filename="../gui/noaa_dialog.py" line="306"/>
         <source>✔ {}</source>
         <translation>✔ {}</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="295"/>
+        <location filename="../gui/noaa_dialog.py" line="309"/>
         <source>⏳ Patientez, chargement des couches dans le projet..</source>
         <translation>⏳ Please wait while layers are being loaded into the project.</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="297"/>
+        <location filename="../gui/noaa_dialog.py" line="311"/>
         <source>✔ Traitement terminé</source>
         <translation>✔ Processing complete</translation>
     </message>
     <message>
-        <location filename="../gui/noaa_dialog.py" line="300"/>
+        <location filename="../gui/noaa_dialog.py" line="314"/>
         <source>❌ {}</source>
         <translation>❌ {}</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="146"/>
+        <source>Charger les emprises NOAA au projet</source>
+        <translation>Load NOAA extents into the project</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="449"/>
+        <source>ℹ️ Les emprises NOAA sont déjà chargées</source>
+        <translation>ℹ️ NOAA extents are already loaded</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="457"/>
+        <source>❌ Impossible de charger les emprises NOAA</source>
+        <translation>❌ Unable to load NOAA extents</translation>
+    </message>
+    <message>
+        <location filename="../gui/noaa_dialog.py" line="497"/>
+        <source>✔ Emprises NOAA chargées dans le projet</source>
+        <translation>✔ NOAA extents loaded into the project</translation>
     </message>
 </context>
 <context>

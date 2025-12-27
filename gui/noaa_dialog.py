@@ -16,6 +16,16 @@ from qgis.PyQt.QtWidgets import (
         QTextEdit, QHeaderView,  QAbstractItemView
     )
 from qgis.utils import iface
+from qgis.core import (
+    QgsVectorLayer,
+    QgsSymbol,
+    QgsSimpleFillSymbolLayer,
+    QgsPalLayerSettings,
+    QgsTextFormat,
+    QgsVectorLayerSimpleLabeling
+)
+from qgis.PyQt.QtGui import QColor
+from pathlib import Path
 
 from qgis.core import (
     QgsCoordinateReferenceSystem,
@@ -133,6 +143,10 @@ class NoaaDialog(QtWidgets.QDialog):
         # =================================================
         buttons_layout = QHBoxLayout()
         buttons_layout.addStretch()
+        self.btn_load_index = QPushButton(self.tr("Charger les emprises NOAA au projet"))
+        self.btn_load_index.clicked.connect(self.load_noaa_index)
+
+        buttons_layout.addWidget(self.btn_load_index)
 
         self.btn_import = QPushButton(self.tr("Importer la cellule sélectionnée"))
         self.btn_close = QPushButton(self.tr("Fermer"))
@@ -426,3 +440,58 @@ class NoaaDialog(QtWidgets.QDialog):
             iface=self.iface,
         )
         display.load_enc_cell(cell_id)
+    def load_noaa_index(self):
+        project = QgsProject.instance()
+
+        # Éviter le chargement multiple
+        for lyr in project.mapLayers().values():
+            if lyr.name() == "NOAA ENC Index":
+                self.log_message(self.tr("ℹ️ Les emprises NOAA sont déjà chargées"))
+                return
+
+        gpkg_path = Path(__file__).parent.parent / "resources" / "noaa_enc_index.gpkg"
+        uri = f"{gpkg_path}|layername=noaa_enc_index"
+
+        layer = QgsVectorLayer(uri, "NOAA ENC Index", "ogr")
+        if not layer.isValid():
+            self.log_message(self.tr("❌ Impossible de charger les emprises NOAA"))
+            return
+
+        # =================================================
+        # 🔹 SYMBOLOGIE : transparent + contour noir
+        # =================================================
+
+        symbol = QgsSymbol.defaultSymbol(layer.geometryType())
+
+        fill = QgsSimpleFillSymbolLayer()
+        fill.setFillColor(QColor(0, 0, 0, 0))     # transparent
+        fill.setStrokeColor(QColor(0, 0, 0))      # contour noir
+        fill.setStrokeWidth(0.3)
+
+        symbol.changeSymbolLayer(0, fill)
+        layer.renderer().setSymbol(symbol)
+
+
+        # =================================================
+        # 🔹 ÉTIQUETTES : cell_id
+        # =================================================
+
+        label_settings = QgsPalLayerSettings()
+        label_settings.fieldName = "cell_id"
+        label_settings.enabled = True
+
+        text_format = QgsTextFormat()
+        text_format.setSize(8)
+        text_format.setColor(QColor("black"))
+
+        label_settings.setFormat(text_format)
+
+        layer.setLabeling(QgsVectorLayerSimpleLabeling(label_settings))
+        layer.setLabelsEnabled(True)
+
+        # =================================================
+        # 🔹 AJOUT AU PROJET
+        # =================================================
+
+        project.addMapLayer(layer)
+        self.log_message(self.tr("✔ Emprises NOAA chargées dans le projet"))

@@ -87,6 +87,7 @@ class NoaaEncCatalog:
 
         if not self._cells:
             raise RuntimeError(self.tr("Catalogue NOAA chargé mais aucune cellule détectée"))
+            
 
 
     # ------------------------------------------------------------------
