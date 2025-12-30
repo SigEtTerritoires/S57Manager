@@ -4,7 +4,7 @@
 **S57Manager** est un plugin QGIS destiné à faciliter l’import, l’affichage, la gestion et le filtrage des données ENC au format **S-57**.
 Il permet notamment :
 
-* l’import automatique des données S-57 vers une base GeoPackage optimisée ;
+* l’import automatique des données S-57 vers une base Postgis ou GeoPackage optimisée ;
 * l’affichage structuré et thématique des couches ENC ;
 * le filtrage des couches par *purpose* (vue d’ensemble, générale, côtière, etc.) ;
 * la gestion d’échelles d’affichage par lots ;
@@ -95,6 +95,12 @@ Fonctionnalités du module NOAA
 * Interface intégrée au plugin (dialogue dédié).
 * Support du multilingue.
 
+### Index NOAA des ENC
+
+Un GeoPackage d’index des cellules ENC NOAA est inclus avec S57Manager.
+Chargé dans QGIS, il permet de visualiser les emprises, identifier les cartes pertinentes et importer directement les cellules sélectionnées via le plugin.
+
+![Index du catalogue NOAA](resources/noaa_enc_index.jpg)
 
 ### 🔹 Traduction (FR/EN/ES/PT)
 

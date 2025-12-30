@@ -1,20 +1,20 @@
 [general]
 name=S57Manager
-description=FR: Gestionnaire S-57 : import, stockage (GPKG/PostGIS) et affichage
+description=S57Manager est un plugin QGIS dédié à l’import, la gestion et l’affichage des données marines ENC (S-57).Il permet d’importer automatiquement des fichiers ENC (.000) vers une base GeoPackage ou PostGIS, d’organiser les couches par thèmes, d’appliquer des styles adaptés et de gérer les échelles d’affichage.Le plugin intègre également un module NOAA permettant de parcourir le catalogue officiel ENC, de filtrer les cellules par purpose, échelle et emprise du canevas, puis de les télécharger et importer directement dans QGIS.S57Manager prend en charge le multilingue (FR/EN/ES/PT) et regroupe plusieurs outils ENC dans une interface unique.
+description_en=S57Manager is a QGIS plugin dedicated to the import, management and display of marine ENC (S-57) data.It allows automatic import of ENC files (.000) into a GeoPackage or PostGIS database, thematic layer organization, predefined styling and scale-based visibility management.The plugin also includes a NOAA module to browse the official ENC catalog, filter cells by purpose, scale and map extent, and download and import them directly into QGIS.S57Manager supports multiple languages (FR/EN/ES/PT) and provides a unified interface for ENC-related tools.
 qgisMinimumVersion=3.28
 qgisMaximumVersion=3.99
 version=1.0.0
 requires_qt=5,6
 supportsQt6=True
 author=Atilio FRANCOIS
-email=f2lmyvhnh@mozmail.com
-about=FR: 
+email=f2lmyvhnh@mozmail.com 
 category=Analysis
 repository=https://github.com/SigEtTerritoires/S57Manager
 homepage=https://github.com/SigEtTerritoires/S57Manager
 tracker=https://github.com/SigEtTerritoires/S57Manager/issues
-tags=
-plugin= S57Manager
+tags=ENC,S-57,NOAA,marine,nautical,hydrography,charts
+plugin=S57Manager
 icon=plugin_icon.png
 deprecated=false
 license=GPL-3.0
@@ -23,6 +23,6 @@ experimental=False
 
 changelog=
 
-    [1.0.0] - 2026-10-01
+    [1.0.0] - 2026-01-01
     - Première version publique de S57Manager
  
