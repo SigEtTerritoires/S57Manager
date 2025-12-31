@@ -24,11 +24,22 @@ Il permet notamment :
 
 ### Organisation des tables
 
-Avec l'option PostGIS, les tables sont stockées dans un schéma nommé "enc". Les noms des tables correspondent au nom S57 préfixé par pt_, li_ ou pl_ selon le type de géométrie.
-Avec l'option geopackage, les tables sont stockées dans un geopackage nommé "enc.gpkg". Les noms des tables correspondent au nom S57 préfixé par pt_, li_ ou pl_ selon le type de géométrie.
+#### PostGIS
+
+* Les tables sont stockées dans un schéma nommé enc
+* Les noms des tables correspondent au nom S-57, préfixé par :
+   * pt_ (points)
+   * li_ (lignes)
+   * pl_ (polygones)
+
+#### GeoPackage
+
+* Les tables sont stockées dans un fichier enc.gpkg
+* La même convention de nommage est utilisée (pt_, li_, pl_)
+
 ### 🔹 Options S-57
 
-* Choix du mode de stockage (GeoPackage, dossier S-57, etc.).
+* Choix du mode de stockage (GeoPackage, dossier S-57, etc.)
 * Définition des chemins de données.
 * Options avancées de gestion.
 * Installation automatique des symboles SVG ENC.
@@ -37,16 +48,20 @@ Avec l'option geopackage, les tables sont stockées dans un geopackage nommé "e
 
 ### Remarques importantes :
 
-* Pour PostGIS, la connexion doit être active dans QGIS.
-Il est conseillé d’utiliser une base vide, car le plugin modifie public.layerstyle et crée plusieurs schémas de travail.
-* Pour GeoPackage, il suffit d’indiquer un répertoire ; le plugin crée automatiquement les fichiers nécessaires.
-* Le bouton Installer les symboles SVG installe les symboles dans le profil utilisateur QGIS (et non dans le dossier SVG global).s.
+* PostGIS
+   * La connexion doit être active dans QGIS
+   * Il est recommandé d’utiliser une base vide
+   * Le plugin modifie public.layerstyle et crée plusieurs schémas de travail
+* GeoPackage
+   * Il suffit d’indiquer un répertoire
+   * Les fichiers nécessaires sont créés automatiquement
+* Le bouton Installer les symboles SVG installe les symboles dans le profil utilisateur QGIS, et non dans le dossier SVG global
 
 ### 🔹 Import S-57
 
 ![Import des fichier .000](resources/dialogimport.png)
 
-Le plugin balaye tout le répertoire et sous-répertoires. Il charge TOUS les fichiers .000 présents.
+Le plugin parcourt le répertoire sélectionné ainsi que tous ses sous-répertoires et importe tous les fichiers .000 présents..
 
 ### 🔹 Affichage structuré des couches
 
@@ -57,7 +72,7 @@ Le plugin balaye tout le répertoire et sous-répertoires. Il charge TOUS les fi
 
 ![Affichage des couches](resources/dialogdisplay.png)
 
-L'ordre de chargement est prévu pour assurer la visibilité de toutes les couches, sans masquages.
+L’ordre de chargement est optimisé afin de garantir la visibilité de toutes les couches.
 
 ### 🔹 Outils ENC
 
@@ -71,17 +86,16 @@ Fonctionnalités :
 
 ![Outils](resources/dialogtools.png)
 
-### Affichage final des couches
+### Exemple d’affichage final
 ![Affichage des couches](resources/display2.jpg)
 
 ### Module NOAA ENC (
 
-S57Manager intègre désormais un module dédié au catalogue officiel NOAA ENC, permettant de rechercher et d’importer facilement des cellules ENC directement depuis QGIS.
-
-Fonctionnalités du module NOAA
+S57Manager intègre un module dédié au catalogue officiel NOAA ENC, permettant de rechercher et d’importer facilement des cellules ENC directement depuis QGIS.
 
 ![Accès au catalogue NOAA](resources/noaacatalog.png)
 
+Fonctionnalités du module NOAA :
 * Chargement automatique du catalogue NOAA ENC (XML officiel).
 * Liste complète des cellules ENC disponibles.
 * Filtrage dynamique :
@@ -97,14 +111,21 @@ Fonctionnalités du module NOAA
 
 ### Index NOAA des ENC
 
-Un GeoPackage d’index des cellules ENC NOAA est inclus avec S57Manager.
-Chargé dans QGIS, il permet de visualiser les emprises, identifier les cartes pertinentes et importer directement les cellules sélectionnées via le plugin.
+Un GeoPackage d’index des cellules ENC NOAA est fourni avec S57Manager.
+Chargé dans QGIS, il permet de :
+* visualiser les emprises des cellules NOAA
+* identifier rapidement les cartes pertinentes
+* importer directement les cellules sélectionnées via le plugin
 
 ![Index du catalogue NOAA](resources/noaa_enc_index.jpg)
 
 ### 🔹 Traduction (FR/EN/ES/PT)
 
-Le plugin charge automatiquement la traduction correspondant à la langue de QGIS.
+Le plugin charge automatiquement la traduction correspondant à la langue de QGIS :
+* Français
+* English
+* Español
+* Português
 
 ---
 
