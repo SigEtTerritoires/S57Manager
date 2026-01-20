@@ -17,6 +17,20 @@ It provides:
 
 ---
 
+## 📘 User Manual / Manuel utilisateur /Manuals del usuario / Manual do usuário
+
+- 🇫🇷 **Français**  
+  https://www.sigterritoires.fr/index.php/s57manager/
+
+- 🇬🇧 **English**  
+  https://www.sigterritoires.fr/index.php/en/s57manageren/
+
+- 🇪🇸 **Español**  
+  https://www.sigterritoires.fr/index.php/es/s57manageres/
+
+- 🇵🇹 **Português**  
+  https://www.sigterritoires.fr/index.php/pt/s57managerpt/
+
 ## 📦 **Main Features**
 
 * Import of ENC (.000) files into **GeoPackage** or **PostGIS** databases

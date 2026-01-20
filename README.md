@@ -13,6 +13,19 @@ Il permet notamment :
 * la prise en charge du **multilingue (FR/EN/ES/PT)**.
 
 ---
+## 📘 User Manual / Manuel utilisateur /Manuals del usuario / Manual do usuário
+
+- 🇫🇷 **Français**  
+  https://www.sigterritoires.fr/index.php/s57manager/
+
+- 🇬🇧 **English**  
+  https://www.sigterritoires.fr/index.php/en/s57manageren/
+
+- 🇪🇸 **Español**  
+  https://www.sigterritoires.fr/index.php/es/s57manageres/
+
+- 🇵🇹 **Português**  
+  https://www.sigterritoires.fr/index.php/pt/s57managerpt/
 
 ## 📦 **Fonctionnalités principales**
 
