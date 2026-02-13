@@ -4,7 +4,7 @@ description=FR:S57Manager est un plugin QGIS dédié à l’import, la gestion e
 about=Plugin QGIS dédié à l’import, la gestion et l’affichage des données marines ENC (S-57).
 qgisMinimumVersion=3.28
 qgisMaximumVersion=3.99
-version=1.0.0
+version=1.0.1
 requires_qt=5,6
 supportsQt6=True
 author=Atilio FRANCOIS
@@ -25,4 +25,7 @@ changelog=
 
     [1.0.0] - 2026-01-01
     - Première version publique de S57Manager
+	[1.0.1] - 2026-02-13 
+    - Ajouté: - Dans le dialogue Afficher couches S57, ajout de l'option "Limiter au secteur affiché (chargement plus rapide)"  	
+    - Corrigé: Impossible d'installer les styles ERREUR: paramètre de configuration "transaction_timeout" non reconnu pour PostgreSQL version < 14
  

@@ -16,7 +16,7 @@ from .logic.importer import S57Importer
 from .logic.display import S57Display
 from qgis.PyQt.QtWidgets import (
     QDialog,  QTreeWidgetItem, QPushButton,
-    QVBoxLayout, QLineEdit, QLabel, QWidget,QTreeWidget
+    QVBoxLayout, QLineEdit, QLabel, QWidget,QTreeWidget, QCheckBox
 )
 from osgeo import gdal
 from .gui.progress_dialog import ProgressDialog
@@ -649,6 +649,10 @@ class S57ManagerPlugin:
         btn_unselect_all = QPushButton(self.tr("Tout désélectionner"))
         layout.addWidget(btn_select_all)
         layout.addWidget(btn_unselect_all)
+        # --- Option emprise ---
+        chk_extent = QCheckBox(self.tr("Limiter au secteur affiché (chargement plus rapide)"))
+        chk_extent.setChecked(True)  # activé par défaut
+        layout.addWidget(chk_extent)
 
         # --- Bouton pour charger ---
         btn_load = QPushButton(self.tr("Charger les couches sélectionnées"))
@@ -1006,7 +1010,9 @@ class S57ManagerPlugin:
                 QMessageBox.warning(None, "S57Manager", self.tr("Aucune couche sélectionnée"))
                 return
 
-            self.display.load_layers(selected)
+            limit_to_extent = chk_extent.isChecked()
+            self.display.load_layers(selected, limit_to_extent=limit_to_extent)
+
             QMessageBox.information(None, "S57Manager", self.tr(" {} couches chargées").format(len(selected)))
 
         btn_load.clicked.connect(load_selected)

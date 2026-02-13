@@ -1,5 +1,5 @@
 from qgis.core import QgsProject, QgsVectorLayer, QgsDataSourceUri, QgsMapLayerStyle
-
+from qgis.core import QgsCoordinateTransform, QgsProject, QgsRectangle
 from qgis.core import QgsMessageLog, Qgis
 class S57Display:
     def __init__(self, settings,db_manager, iface):
@@ -231,13 +231,21 @@ class S57Display:
         ]
     def tr(self, message):
         return QCoreApplication.translate("S57Settings", message)
-    def load_layers(self, selected_tables):
+    def load_layers(self, selected_tables, limit_to_extent=True):
+
         from qgis.core import (
             QgsProject, QgsVectorLayer, QgsDataSourceUri, QgsMapLayerStyle
         )
 
         mode = self.settings.storage_mode()
         projet = QgsProject.instance()
+        canvas = self.iface.mapCanvas()
+        extent = None
+        if limit_to_extent:
+            canvas = self.iface.mapCanvas()
+            extent = canvas.extent()
+            if extent is not None and extent.isEmpty():
+                extent = None
 
         # =====================================================
         # === MODE POSTGIS ====================================
@@ -282,6 +290,16 @@ class S57Display:
                         f"Impossible de charger la couche : {nom_table}",
                         "S57Manager")
                     continue
+                if couche.isValid() and extent:
+                    canvas = self.iface.mapCanvas()
+                    canvas_crs = canvas.mapSettings().destinationCrs()
+                    layer_crs = couche.crs()
+
+                    extent_layer = self._transform_extent(extent, canvas_crs, layer_crs)
+
+                    srid = layer_crs.postgisSrid()
+                    where = self._pg_extent_filter(extent_layer, srid)
+                    couche.setSubsetString(where)
 
                 # Charger le style portant le même nom que la couche
                 styles = couche.listStylesInDatabase()
@@ -326,6 +344,15 @@ class S57Display:
                         "S57Manager"
                     )
                     continue
+                if couche.isValid() and extent:
+                    canvas = self.iface.mapCanvas()
+                    canvas_crs = canvas.mapSettings().destinationCrs()
+                    layer_crs = couche.crs()
+
+                    extent_layer = self._transform_extent(extent, canvas_crs, layer_crs)
+
+                    where = self._gpkg_extent_filter(extent_layer)
+                    couche.setSubsetString(where)
 
                 # ---- Charger le style depuis layer_styles ----
                 styles = couche.listStylesInDatabase()
@@ -341,6 +368,35 @@ class S57Display:
 
             self.iface.mapCanvas().refreshAllLayers()
             return
+    def _pg_extent_filter(self, extent, srid, geom_col="wkb_geometry"):
+        return (
+            f"{geom_col} && ST_MakeEnvelope("
+            f"{extent.xMinimum()}, {extent.yMinimum()}, "
+            f"{extent.xMaximum()}, {extent.yMaximum()}, {srid})"
+        )
+
+    def _gpkg_extent_filter(self, extent, geom_col="wkb_geometry"):
+        return (
+            f"ST_Intersects("
+            f"{geom_col}, "
+            f"BuildMbr("
+            f"{extent.xMinimum()}, {extent.yMinimum()}, "
+            f"{extent.xMaximum()}, {extent.yMaximum()})"
+            f")"
+        )
+
+
+    def _transform_extent(self, extent, src_crs, dst_crs):
+        if src_crs == dst_crs:
+            return extent
+
+        transform = QgsCoordinateTransform(
+            src_crs,
+            dst_crs,
+            QgsProject.instance()
+        )
+
+        return transform.transformBoundingBox(extent)
 
     def load_enc_cell(self, cell_id: str):
         enc_chart = f"{cell_id}.000"

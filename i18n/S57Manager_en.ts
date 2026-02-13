@@ -512,7 +512,7 @@
 <context>
     <name>S57Display</name>
     <message>
-        <location filename="../logic/display.py" line="308"/>
+        <location filename="../logic/display.py" line="326"/>
         <source>Aucun GeoPackage ENC.gpkg n&apos;est défini dans les options.</source>
         <translation>No ENC.gpkg GeoPackage is defined in the options.</translation>
     </message>
@@ -939,532 +939,532 @@
         <translation>Deselect all</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="654"/>
+        <location filename="../plugin.py" line="658"/>
         <source>Charger les couches sélectionnées</source>
         <translation>Load selected layers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="667"/>
+        <location filename="../plugin.py" line="671"/>
         <source>Profondeurs</source>
         <translation>Depths</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="676"/>
+        <location filename="../plugin.py" line="680"/>
         <source>Obstacles / constructions</source>
         <translation>Obstacles / structures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="680"/>
+        <location filename="../plugin.py" line="684"/>
         <source>Obstacles / épaves</source>
         <translation>Obstacles / wrecks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="681"/>
+        <location filename="../plugin.py" line="685"/>
         <source>Obstacles / aides à la navigation</source>
         <translation>Obstacles/Navigation aids</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="684"/>
+        <location filename="../plugin.py" line="688"/>
         <source>Terrains / terres</source>
         <translation>Land / Lands</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="685"/>
+        <location filename="../plugin.py" line="689"/>
         <source>Terrains / canaux</source>
         <translation>and / channels</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="686"/>
+        <location filename="../plugin.py" line="690"/>
         <source>Terrains / lacs</source>
         <translation>Land / Lakes</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="687"/>
+        <location filename="../plugin.py" line="691"/>
         <source>Terrains / rivières</source>
         <translation>Land / Rivers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="689"/>
+        <location filename="../plugin.py" line="693"/>
         <source>Terrains / zones bâties</source>
         <translation>Land / built-up areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="690"/>
+        <location filename="../plugin.py" line="694"/>
         <source>Terrains / points de contrôle</source>
         <translation>Land / control points</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="725"/>
+        <location filename="../plugin.py" line="729"/>
         <source>Terrains / infrastructures</source>
         <translation>Land / infrastructure</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="693"/>
+        <location filename="../plugin.py" line="697"/>
         <source>Terrains / routes</source>
         <translation>Land / Roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="697"/>
+        <location filename="../plugin.py" line="701"/>
         <source>Terrains / nature</source>
         <translation>Land / Nature</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="699"/>
+        <location filename="../plugin.py" line="703"/>
         <source>Terrains / landmarks</source>
         <translation>Land / landmarks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="703"/>
+        <location filename="../plugin.py" line="707"/>
         <source>Énergies / turbines</source>
         <translation>Energy / turbines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="704"/>
+        <location filename="../plugin.py" line="708"/>
         <source>Végétation</source>
         <translation>Vegetation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="716"/>
+        <location filename="../plugin.py" line="720"/>
         <source>Terrains / zones d’eau</source>
         <translation>Land / water areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="750"/>
+        <location filename="../plugin.py" line="754"/>
         <source>Installations maritimes</source>
         <translation>Maritime facilities</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="729"/>
+        <location filename="../plugin.py" line="733"/>
         <source>Terrains / zones protégées</source>
         <translation>Land / Protected areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="728"/>
+        <location filename="../plugin.py" line="732"/>
         <source>Terrains / zones dangereuses</source>
         <translation>Land / Dangerous areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="730"/>
+        <location filename="../plugin.py" line="734"/>
         <source>Terrains / zones glaciales</source>
         <translation>Land / Glacial terrain</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="733"/>
+        <location filename="../plugin.py" line="737"/>
         <source>Terrains / infrastructure</source>
         <translation>Land / infrastructure</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="737"/>
+        <location filename="../plugin.py" line="741"/>
         <source>Zones de pêche</source>
         <translation>Fishing areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="738"/>
+        <location filename="../plugin.py" line="742"/>
         <source>Zones de ferry</source>
         <translation>Ferry areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="739"/>
+        <location filename="../plugin.py" line="743"/>
         <source>Voies navigables</source>
         <translation>Waterways</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="740"/>
+        <location filename="../plugin.py" line="744"/>
         <source>Zones d’exercice</source>
         <translation>Practice areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="747"/>
+        <location filename="../plugin.py" line="751"/>
         <source>Installations aériennes</source>
         <translation>Overhead installations</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="753"/>
+        <location filename="../plugin.py" line="757"/>
         <source>Lignes / rapides</source>
         <translation>Lines / rapids</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="754"/>
+        <location filename="../plugin.py" line="758"/>
         <source>Lignes / installations</source>
         <translation>Lignes / installations</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="797"/>
+        <location filename="../plugin.py" line="801"/>
         <source>Lignes / hydrographie</source>
         <translation>Lines / hydrography</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="756"/>
+        <location filename="../plugin.py" line="760"/>
         <source>Lignes / points remarquables</source>
         <translation>Lines / Notable points</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="757"/>
+        <location filename="../plugin.py" line="761"/>
         <source>Lignes / ferry</source>
         <translation>Lines / ferry</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="780"/>
+        <location filename="../plugin.py" line="784"/>
         <source>Lignes / câbles</source>
         <translation>Liges / cables</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="794"/>
+        <location filename="../plugin.py" line="798"/>
         <source>Lignes / canaux</source>
         <translation>Lines / canals</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="761"/>
+        <location filename="../plugin.py" line="765"/>
         <source>Lignes / profondeurs</source>
         <translation>Lines / Depth</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="762"/>
+        <location filename="../plugin.py" line="766"/>
         <source>Lignes / terres</source>
         <translation>Lines / Land</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="763"/>
+        <location filename="../plugin.py" line="767"/>
         <source>Lignes / rivières</source>
         <translation>Lines / Rivers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="800"/>
+        <location filename="../plugin.py" line="804"/>
         <source>Lignes / infrastructures</source>
         <translation>Lines / infrastructures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="793"/>
+        <location filename="../plugin.py" line="797"/>
         <source>Lignes / pipelines</source>
         <translation>Lines / pipelines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="792"/>
+        <location filename="../plugin.py" line="796"/>
         <source>Lignes / navigation</source>
         <translation>Lines / navigation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="791"/>
+        <location filename="../plugin.py" line="795"/>
         <source>Lignes / routes</source>
         <translation>Lines / Roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="769"/>
+        <location filename="../plugin.py" line="773"/>
         <source>Lignes / ponts</source>
         <translation>Lines / Bridges</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="771"/>
+        <location filename="../plugin.py" line="775"/>
         <source>Lignes / relief</source>
         <translation>Lines / relief</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="778"/>
+        <location filename="../plugin.py" line="782"/>
         <source>Lignes / constructions</source>
         <translation>Lines / structures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="774"/>
+        <location filename="../plugin.py" line="778"/>
         <source>Lignes / obstacles</source>
         <translation>Lines / Obstructions</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="775"/>
+        <location filename="../plugin.py" line="779"/>
         <source>Lignes / radiales</source>
         <translation>Lines / Radials</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="776"/>
+        <location filename="../plugin.py" line="780"/>
         <source>Lignes / voies ferrées</source>
         <translation>Lines / Railways</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="779"/>
+        <location filename="../plugin.py" line="783"/>
         <source>Lignes / cascades</source>
         <translation>Lines / Waterfalls</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="781"/>
+        <location filename="../plugin.py" line="785"/>
         <source>Lignes / balises</source>
         <translation>Lines / Beacons</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="782"/>
+        <location filename="../plugin.py" line="786"/>
         <source>Lignes / turbines</source>
         <translation>Lignes / turbines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="785"/>
+        <location filename="../plugin.py" line="789"/>
         <source>Lignes / lignes de sel</source>
         <translation>Lines / salt lines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="786"/>
+        <location filename="../plugin.py" line="790"/>
         <source>Lignes / digues</source>
         <translation>Lines / dikes</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="787"/>
+        <location filename="../plugin.py" line="791"/>
         <source>Lignes / végétation</source>
         <translation>Lines / Vegetation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="788"/>
+        <location filename="../plugin.py" line="792"/>
         <source>Lignes / pistes</source>
         <translation>Lines / tracks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="789"/>
+        <location filename="../plugin.py" line="793"/>
         <source>Lignes / frontières</source>
         <translation>Lines / borders</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="790"/>
+        <location filename="../plugin.py" line="794"/>
         <source>Lignes / routes locales</source>
         <translation>Lines / local roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="795"/>
+        <location filename="../plugin.py" line="799"/>
         <source>Lignes / forêts</source>
         <translation>Lines / forests</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="798"/>
+        <location filename="../plugin.py" line="802"/>
         <source>Lignes / tunnels</source>
         <translation>Lignes / tunnels</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="799"/>
+        <location filename="../plugin.py" line="803"/>
         <source>Lignes / installations maritimes</source>
         <translation>Lines / Maritime facilities</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="801"/>
+        <location filename="../plugin.py" line="805"/>
         <source>Lignes / zones de pêche</source>
         <translation>Lines / Fishing areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="858"/>
+        <location filename="../plugin.py" line="862"/>
         <source>Points / routes</source>
         <translation>Points / Roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="853"/>
+        <location filename="../plugin.py" line="857"/>
         <source>Points / zones bâties</source>
         <translation>Points / built-up areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="882"/>
+        <location filename="../plugin.py" line="886"/>
         <source>Points / installations maritimes</source>
         <translation>Points / Maritime facilities</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="871"/>
+        <location filename="../plugin.py" line="875"/>
         <source>Points / aides à la navigation</source>
         <translation>Points / navigation aids</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="869"/>
+        <location filename="../plugin.py" line="873"/>
         <source>Points / constructions</source>
         <translation>Points / constructions</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="886"/>
+        <location filename="../plugin.py" line="890"/>
         <source>Points / infrastructures</source>
         <translation>Points / infrastructures</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="885"/>
+        <location filename="../plugin.py" line="889"/>
         <source>Points / signaux</source>
         <translation>Points / Signals</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="816"/>
+        <location filename="../plugin.py" line="820"/>
         <source>Points / terrains</source>
         <translation>Points / Land</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="876"/>
+        <location filename="../plugin.py" line="880"/>
         <source>Points / zones d’eau</source>
         <translation>Points / water areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="818"/>
+        <location filename="../plugin.py" line="822"/>
         <source>Points / terrains dangereux</source>
         <translation>Points / Dangerous areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="821"/>
+        <location filename="../plugin.py" line="825"/>
         <source>Points / turbines</source>
         <translation>Points / turbines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="822"/>
+        <location filename="../plugin.py" line="826"/>
         <source>Points / zones glaciales</source>
         <translation>Points / Glacial terrain</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="825"/>
+        <location filename="../plugin.py" line="829"/>
         <source>Points / obstacles</source>
         <translation>Points / Obstructions</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="826"/>
+        <location filename="../plugin.py" line="830"/>
         <source>Points / points de pilotage</source>
         <translation>Points / PIlot points</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="888"/>
+        <location filename="../plugin.py" line="892"/>
         <source>Points / balises</source>
         <translation>Points / Beacons</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="829"/>
+        <location filename="../plugin.py" line="833"/>
         <source>Points / réflecteurs</source>
         <translation>Points / reflectors</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="830"/>
+        <location filename="../plugin.py" line="834"/>
         <source>Points / signalisation sonore</source>
         <translation>Points / audible signals</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="831"/>
+        <location filename="../plugin.py" line="835"/>
         <source>Points / topographie maritime</source>
         <translation>Points / marine topography</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="835"/>
+        <location filename="../plugin.py" line="839"/>
         <source>Points / épaves</source>
         <translation>Points / wrecks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="837"/>
+        <location filename="../plugin.py" line="841"/>
         <source>Points / autres</source>
         <translation>Points / other</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="838"/>
+        <location filename="../plugin.py" line="842"/>
         <source>Points / installations aériennes</source>
         <translation>Points / Overhead installations</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="839"/>
+        <location filename="../plugin.py" line="843"/>
         <source>Points / courants</source>
         <translation>Points / currents</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="840"/>
+        <location filename="../plugin.py" line="844"/>
         <source>Points / landmarks</source>
         <translation>Points / landmarks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="841"/>
+        <location filename="../plugin.py" line="845"/>
         <source>Points / magnétiques</source>
         <translation>Points / magnetic</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="860"/>
+        <location filename="../plugin.py" line="864"/>
         <source>Points / feux</source>
         <translation>Points / Lights</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="846"/>
+        <location filename="../plugin.py" line="850"/>
         <source>Points / pêche</source>
         <translation>Points / Fishing</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="849"/>
+        <location filename="../plugin.py" line="853"/>
         <source>Points / végétation</source>
         <translation>Points / Vegetation</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="850"/>
+        <location filename="../plugin.py" line="854"/>
         <source>Points / pipelines</source>
         <translation>Points / pipelines</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="856"/>
+        <location filename="../plugin.py" line="860"/>
         <source>Points / centre</source>
         <translation>Points / center</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="857"/>
+        <location filename="../plugin.py" line="861"/>
         <source>Points / forêts</source>
         <translation>Points / Forests</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="862"/>
+        <location filename="../plugin.py" line="866"/>
         <source>Points / pistes</source>
         <translation>Points / tracks</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="863"/>
+        <location filename="../plugin.py" line="867"/>
         <source>Points / pylônes</source>
         <translation>Points / pylons</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="867"/>
+        <location filename="../plugin.py" line="871"/>
         <source>Points / ponts</source>
         <translation>Points / Bridges</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="868"/>
+        <location filename="../plugin.py" line="872"/>
         <source>Points / sources</source>
         <translation>Points / sources</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="870"/>
+        <location filename="../plugin.py" line="874"/>
         <source>Points / routes locales</source>
         <translation>Points / Local roads</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="877"/>
+        <location filename="../plugin.py" line="881"/>
         <source>Points / zones protégées</source>
         <translation>Points / Protected areas</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="883"/>
+        <location filename="../plugin.py" line="887"/>
         <source>Points / radars</source>
         <translation>Points / radars</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="880"/>
+        <location filename="../plugin.py" line="884"/>
         <source>Points / grues</source>
         <translation>Points / Cranes</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="889"/>
+        <location filename="../plugin.py" line="893"/>
         <source>Points / cascades</source>
         <translation>Points / Waterfalls</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="894"/>
+        <location filename="../plugin.py" line="898"/>
         <source>display.py n&apos;a pas couches_a_charger</source>
         <translation>display.py does not have layers_to_load</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="905"/>
+        <location filename="../plugin.py" line="909"/>
         <source>Autres</source>
         <translation>Other</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="1302"/>
+        <location filename="../plugin.py" line="1308"/>
         <source>Aucune couche sélectionnée</source>
         <translation>No layer selected</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="1010"/>
+        <location filename="../plugin.py" line="1016"/>
         <source> {} couches chargées</source>
         <translation> {} loaded layers</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="1283"/>
+        <location filename="../plugin.py" line="1289"/>
         <source>Filtrage effectué : purpose = {}</source>
         <translation>Filtering performed: purpose = {}</translation>
     </message>
     <message>
-        <location filename="../plugin.py" line="1296"/>
+        <location filename="../plugin.py" line="1302"/>
         <source>❌ Échelle maximale invalide</source>
         <translation>❌ Maximum scale invalid</translation>
     </message>
@@ -1499,6 +1499,11 @@
         <location filename="../plugin.py" line="80"/>
         <source>NOAA ENC Manager</source>
         <translation>NOAA ENC Manager</translation>
+    </message>
+    <message>
+        <location filename="../plugin.py" line="653"/>
+        <source>Limiter au secteur affiché (chargement plus rapide)</source>
+        <translation>Limit to the displayed area (faster loading)</translation>
     </message>
 </context>
 <context>
